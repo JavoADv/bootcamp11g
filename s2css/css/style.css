@@ -1,3 +1,35 @@
-.lista-3 li + li {
-    background-color: aquamarine;
+*{
+    color:black;
+}
+nav{
+    display:block;
+}
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    color:black;
+    background-color: lightgray;
+}
+
+.top{
+    display: flex; 
+    justify-content: center;
+    background-color: burlywood;
+    font-size: 4em;
+}
+
+.section {
+    padding-top: 300px;
+
+}
+
+.bottom {
+    padding-top: 100px;
+}
+
+#titles{
+
 }
