@@ -1,1 +1,3 @@
-"style"
+.lista-3 li + li {
+    background-color: aquamarine;
+}
