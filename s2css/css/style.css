@@ -1,12 +1,12 @@
 *{
     color:black;
 }
-nav{
-    display:block;
-}
+
+
 aside {
     width: 30%;
     padding-left: 15px;
+    margin-top: -190px;
     margin-left: 15px;
     float: right;
     font-style: italic;
@@ -22,14 +22,29 @@ aside {
 }
 
 .section {
-    padding-top: 300px;
-
+    background:greenyellow;
+    height:280px;
+    width: 600px;
+    margin: 2rem ;
+    
 }
 
 .bottom {
     padding-top: 100px;
+    background: indigo;
+    }
+
+.bottom p {
+    font-size: 2rem;
+    color:ivory;
 }
 
-#titles{
-
+.nav{
+    font-size: 2em;
+    color:blue;
 }
+
+.italic {
+    font-style: italic;
+}
+
