@@ -30,19 +30,26 @@
 section {
     background: yellow;
     /*box-sizing: border-box;*/
-    background-position-y: 2000vw;
-    
-    width: 60vw;
+   /* background-position-y: 2000vw;*/
+    box-sizing: content-box;
+     width: 60vw;
     height: 250px;
     text-align: center;
 }
 
 #asi{
-    background: dimgray;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background:gray;
+    /*background-repeat: no-repeat;
+    background-position: right;*/
+
+   /* padding-right: 100%;
+    padding-left: 60%;*/
+
+    box-sizing: border-box;
     width: 40vw;
     height: 250px;
+    font-size: xx-large;
+    text-align: center;
     
 
 }
