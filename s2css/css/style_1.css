@@ -1,0 +1,50 @@
+*{
+    color:black;
+}
+
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-top: -190px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    color:black;
+    background-color: lightgray;
+}
+
+.top{
+    display: flex; 
+    justify-content: center;
+    background-color: burlywood;
+    font-size: 4em;
+}
+
+.section {
+    background:greenyellow;
+    height:280px;
+    width: 600px;
+    margin: 2rem ;
+    
+}
+
+.bottom {
+    padding-top: 100px;
+    background: indigo;
+    }
+
+.bottom p {
+    font-size: 2rem;
+    color:ivory;
+}
+
+.nav{
+    font-size: 2em;
+    color:blue;
+}
+
+.italic {
+    font-style: italic;
+}
+
