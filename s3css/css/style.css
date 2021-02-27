@@ -1,1 +1,48 @@
-"style"
+
+.center {
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.red {
+    background: coral;
+}
+
+.top {
+    width: 100vw;
+    height: 100px;
+    margin: 0;
+}
+
+.blue {
+    background: cornflowerblue;
+}
+
+#bottom {
+    background:darksalmon;
+    width: 100vw;
+    height: 100px;
+    margin: 0;
+}
+
+
+section {
+    background: yellow;
+    /*box-sizing: border-box;*/
+    background-position-y: 2000vw;
+    
+    width: 60vw;
+    height: 250px;
+    text-align: center;
+}
+
+#asi{
+    background: dimgray;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 40vw;
+    height: 250px;
+    
+
+}
