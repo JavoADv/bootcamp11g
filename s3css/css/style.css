@@ -19,11 +19,12 @@
     background: cornflowerblue;
 }
 
-#bottom {
+.bottom {
     background:darksalmon;
     width: 100vw;
     height: 100px;
-    margin: 0;
+    /*margin: 0*/
+    
 }
 
 
@@ -31,10 +32,12 @@ section {
     background: yellow;
     /*box-sizing: border-box;*/
    /* background-position-y: 2000vw;*/
-    box-sizing: content-box;
+    /*box-sizing: content-box;*/
      width: 60vw;
     height: 250px;
     text-align: center;
+    margin-top: -270px;
+    
 }
 
 #asi{
@@ -45,11 +48,32 @@ section {
    /* padding-right: 100%;
     padding-left: 60%;*/
 
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     width: 40vw;
     height: 250px;
     font-size: xx-large;
     text-align: center;
+    /*padding-left: 60vw;*/
+    margin-left: 60vw;
     
+    }
 
-}
+    .heading{
+        width: 58vw;
+        height: 35px;
+        padding-left: 1;
+        margin-left: 1vw;
+    }
+
+    .article {
+        /*width: 0wv;*/
+        height: 100px;
+        background:lightskyblue;
+        padding-left: 1;
+        margin-left: 1vw;
+        margin-bottom: 250w;
+
+
+    }
+        
+    
