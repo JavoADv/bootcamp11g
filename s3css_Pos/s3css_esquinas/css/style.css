@@ -1,0 +1,50 @@
+.box {
+    display:flex;
+
+    flex-direction: column;
+
+     width: 100vw;  
+     height: 50vh; 
+    border: 2px solid black;
+
+    margin:auto;
+}
+
+.boxinit {
+    display: flex;
+    width: 100vw;  
+    height: 33.33%; 
+   border: 1px solid rgb(252, 252, 252);
+
+   margin:auto;
+  
+}
+
+.item1 {
+
+    width: 10%; 
+    background: rgb(231, 68, 8);
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.item2 {
+    width: 60%;
+    background: rgba(216, 40, 78, 0.616);
+
+}
+
+.item3 {
+    width: 45%;
+    background: rgb(38, 253, 9);
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.item4 {
+    width: 90%;
+    background: deepskyblue;
+    margin-left:5%;
+    margin-right: 5%;;
+}
