@@ -1,0 +1,49 @@
+.box {
+    display: flex;
+
+    width: 100vw;
+    height: 30vw;
+
+    border: 2px solid black;
+
+    margin:0;
+    
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 33.33%;
+
+    border: 1px solid red;
+
+    margin-left: 65px;
+    margin-right: 65px;
+
+    padding-bottom: 5vw;
+
+    text-align:justify;
+
+}
+
+.bg-red {
+    background: rgb(235, 81, 112);
+    background-color:rgb(235, 81, 112);;
+   
+}
+
+.text-transparent {
+    color:floralwhite;
+}
+
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
