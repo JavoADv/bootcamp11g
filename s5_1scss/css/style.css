@@ -1,0 +1,94 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+  list-style: none;
+}
+
+body {
+  background-color: #f7afc8;
+}
+
+.card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*width: 30%;*/
+  background: white;
+  border: 1px solid black;
+  border-radius: 1rem;
+  -webkit-box-shadow: 3px 3px 5px black;
+          box-shadow: 3px 3px 5px black;
+}
+
+.card-box .category {
+  /*font-weight: bold;*/
+  margin-bottom: 1rem;
+}
+
+.card-box .price {
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-box .price span {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.card-box ul li {
+  padding: 1rem;
+  width: 100%;
+  border-top: 1px solid #c2c0c0;
+  text-align: center;
+}
+
+.card-box ul li:last-of-type {
+  border-bottom: 1px solid #c2c0c0;
+}
+
+.card-box .bttn {
+  padding: 2rem;
+  margin: 1rem;
+  width: 60%;
+  height: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  /*background-image: $custom-gradient;*/
+  background-color: #2fff9e;
+  -webkit-transition: background-color 3s ease;
+  transition: background-color 3s ease;
+}
+
+.card-box .bttn span {
+  margin: 2rem;
+  color: greenyellow;
+}
+
+.card-box .bttn:hover {
+  /* background-image: $custom-gradient-change;*/
+  background-color: #0646a5;
+  cursor: pointer;
+}
+
+/*
+- a partir de 768px, sólo se vean la 1a y la 3er card
+- en desktop, el body debe tener fondo blanco
+- para tablet, las cards deberían aparecer de forma horizontal dentro del contenedor
+- en desktop, se debe de invertir el orden de las cards*/
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,101 @@
+$base-measure: 1rem;
+$custom-gradient: linear-gradient(45deg, rgb(243, 90, 43),rgb(233, 60, 190),rgb(250, 83, 105));
+$light-red: rgb(245, 119, 161);
+$very-light-red: rgb(233, 178, 196);
+$grayish-red: rgb(247, 175, 200);
+$custom-gradient-change:  linear-gradient(90deg, rgb(243, 163, 43),rgba(214, 45, 129, 0.986),rgb(223, 63, 63));
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: arial;
+    list-style: none;
+}
+
+body {
+    background-color: $grayish-red;
+}
+
+.card-box  {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /*width: 30%;*/
+
+    background: white;
+
+    border: 1px solid black;
+    border-radius: $base-measure;
+
+    box-shadow: 3px 3px 5px black;
+
+    transform: scale(1.1);
+
+    .category {
+        /*font-weight: bold;*/
+        margin-bottom: 1rem;
+
+       
+        }
+
+    .price{
+        font-size: $base-measure*3;
+        display: flex;
+        align-items: center;
+        span {
+            font-size: $base-measure*1.5;
+            color:red;
+            
+        }
+        }
+      
+        ul li {
+            padding: $base-measure;
+            width: 100%;
+            border-top: 1px solid rgb(194, 192, 192);
+            text-align: center;
+
+            &:last-of-type {
+                border-bottom: 1px solid rgb(194, 192, 192);
+               
+            }
+
+    }
+
+
+    
+
+    .bttn {
+        padding: $base-measure;
+        margin:$base-measure;
+        width: 60%;
+        height:$base-measure*0.5;
+        border:none;
+        border-radius: $base-measure*0.5;
+        /*background-image: $custom-gradient;*/
+        background-color: rgb(47, 255, 158);
+        transition: background-color 3s ease;
+
+        transform: scale(1.2);
+
+        span {
+            display: inline-block;
+            margin: $base-measure*;
+            color: greenyellow ;
+        }
+        &:hover{
+           /* background-image: $custom-gradient-change;*/
+           background-color: rgb(6, 70, 165);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+
+/*
+- a partir de 768px, sólo se vean la 1a y la 3er card
+- en desktop, el body debe tener fondo blanco
+- para tablet, las cards deberían aparecer de forma horizontal dentro del contenedor
+- en desktop, se debe de invertir el orden de las cards*/
