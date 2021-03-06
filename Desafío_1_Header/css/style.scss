@@ -1,0 +1,96 @@
+$base-measure: 1rem;
+$round-border: 8px;
+
+@mixin margin-boxes {
+    margin-right:$base-measure;
+    margin-top: $base-measure;
+    margin-bottom: $base-measure;
+    
+}
+
+.container{
+    display: flex;
+    width: 100%;
+
+    position: relative;
+
+    margin: 0;
+
+    border: 1px solid rgb(214, 214, 214);
+
+    .round-border {
+        border-radius: $round-border;
+    }
+/*}*/
+
+
+
+.container-top-left {
+    display: flex;
+    width: 50%;
+
+    /*justify-content: flex-start;*/
+    .search {
+      @include margin-boxes;
+    }
+
+
+.dev-button {
+    display: flex;
+    @include margin-boxes; 
+    margin-left:$base-measure*6;
+    background-image: url(/Icon_Dev.svg);
+    color:whitesmoke;
+    padding: $base-measure;
+    border: none;
+    border-radius: $round-borders;
+    }
+
+    input[type="text"] {
+        width: 45%
+    }
+}
+
+.container-top-right {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+
+    
+
+    .post {
+        @include margin-boxes;
+        width: $base-measure*10;
+        background-color: #3b49df;
+        color:whitesmoke;
+        border-radius: $round-border;
+        border: none;
+        
+        
+    }
+
+
+.avatar {
+   /* vertical-align: middle;*/
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    
+
+    background-image:url(/Images/Selfie.jpeg) ;
+    background-color: transparent;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+
+}
+}
+}
+
+.container-main {
+    width: 100%;
+    display: flex;
+    background: rgb(197, 186, 186);
+    margin: 0;
+    border: 1px solid gray;
+}
