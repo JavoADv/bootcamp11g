@@ -1,0 +1,32 @@
+.container-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 1px solid gray;
+  margin: 0;
+  background: #c2bcbc;
+}
+
+.container-main .Icons-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+  border: 1px solid gray;
+  margin: 0;
+  background: #bd7676;
+}
+
+.container-main .Icons-box .Icons {
+  width: 1.5rem;
+  margin: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */

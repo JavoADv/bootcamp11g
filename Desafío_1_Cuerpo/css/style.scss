@@ -1,0 +1,54 @@
+$base-measure: 1rem;
+$round-border: 8px;
+
+@mixin margin-boxes {
+    margin-right:$base-measure;
+    margin-top: $base-measure;
+    margin-bottom: $base-measure;
+}
+
+.container-main {
+    display: flex;
+    width: 100%;
+    border: 1px solid gray;
+    margin: 0;
+    background: rgb(194, 188, 188);
+    .container-left {
+        display: flex;
+        flex-direction: column;
+        width:30%;
+        border: 3px solid red;
+        margin 0;
+
+    }
+    .Icons-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    border: 1px solid gray;
+    margin: 0;
+    background: rgb(189, 118, 118);
+
+    .Icons {
+        width: $base-measure*1.5;
+        margin:$base-measure*0.5;
+    }
+
+    .bottom-box {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        padding-left: $base-measure;
+        border: 2px solid greenyellow;
+
+        .Icons {
+            width: $base-measure*1.5;
+            margin:$base-measure*0.5;
+        }
+    }
+
+    }
+}
+        
+   
