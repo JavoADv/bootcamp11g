@@ -8,7 +8,26 @@
   background: #c2bcbc;
 }
 
-.container-main .Icons-box {
+.container-main .text{
+  display:block;
+  color: red;
+}
+
+.container-main .container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  border: 3px solid red;
+  margin-left: 0;
+  
+}
+
+.container-left .Icons-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,13 +38,113 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+          align-items: center ;
   width: 30%;
   border: 1px solid gray;
-  margin: 0;
-  background: #bd7676;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-right:30%;
+  
+  background: #eef0f1;
+}
+
+
+.Icons-box a[href*="https://"] {
+  display: inline-block;
+  margin: 1rem;
+  padding-top: 0.25rem;
+  padding-left: 4rem;
+  width: 2rem;
+  height: 2rem;
+ 
+  border: 1px solid blue;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.btn#btn-h {
+  background: url(/Images/Icon_Home.svg) no-repeat;
+  }
+
+a.btn#btn-RL {
+  background:url(/Images/Icon_ReadingList.svg) no-repeat;
+}
+
+a.btn#btn-L {
+  background:url(/Images/Icon_Lists.svg) no-repeat;
+}
+
+a.btn#btn-Pod {
+  background: url(/Images/Icon_Podcasts.svg) no-repeat;
+}
+
+a.btn#btn-Vid {
+  background: url(/Images/Icon_Videos.svg) no-repeat;
+}
+
+a.btn#btn-Tags {
+  background: url(/Images/Icon_Tags.svg) no-repeat;
+}
+
+a.btn#btn-CoC {
+  background: url(/Images/Icon_CodeOfConduct.svg) no-repeat;
+}
+
+a.btn#btn-FAQ {
+  background: url(/Images/Icon_FAQ.svg) no-repeat;
+}
+
+a.btn#btn-DevS {
+  background: url(/Images/Icon_DevShop.svg) no-repeat;
+}
+
+a.btn#btn-About {
+  background: url(/Images/Icon_About.svg) no-repeat;
+}
+
+a.btn#btn-PP {
+  background: url(/Images/Icon_PrivacyPolicy.svg) no-repeat;
+}
+
+a.btn#btn-Terms {
+  background: url(/Images/Icon_TermsOfUse.svg) no-repeat;
+}
+
+a.btn#btn-Cnt {
+  background: url(/Images/Icon_Comtact.svg) no-repeat;
+}
+
+
+.container-left .text-box {
+  display:flex;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid blue;
+  background: skyblue;
+
 }
 
 .container-main .Icons-box .Icons {
+  width: 1.5rem;
+  margin: 0.5rem;
+}
+
+.container-left  .bottom-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-around;
+  background: url(/Images/Icon_twitter.svg) no-repeat;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  border: 2px solid greenyellow;
+}
+
+.container-main .Icons-box .bottom-box .Icons {
   width: 1.5rem;
   margin: 0.5rem;
 }
