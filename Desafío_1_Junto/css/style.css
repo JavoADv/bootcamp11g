@@ -1,0 +1,285 @@
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    border: 1px solid #d6d6d6;
+    position: sticky;
+    /*}*/
+  }
+  
+  .container .round-border {
+    border-radius: 8px;
+  }
+  
+  .container .container-top-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    /*justify-content: flex-start;*/
+  }
+  
+  .container .container-top-left .search {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid rgb(209, 209, 209);
+  }
+  
+  .container-top-left input:nth-of-type(1):focus{
+    outline-style: none;
+    border: 1px solid #3b49df;
+    box-shadow: 1px 2px #3b49df;
+    }
+  
+  
+  .container .container-top-left .dev-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+    background-image: url(/Images/Icon_Dev.svg);
+    color: whitesmoke;
+    padding: 1rem;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .container .container-top-left input[type="text"] {
+    width: 55%;
+  
+  }
+  
+  .container .container-top-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            align-items: center;
+  }
+  
+  .container-top-right .top-icons {
+    width: 2rem;
+    margin-left:1rem;
+    margin-right: 2rem;
+  
+  }
+  
+  .container .post {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 10rem;
+    background-color: #3b49df;
+    color: whitesmoke;
+    border-radius: 8px;
+    border: none;
+    outline-style: none;
+  }
+  
+  .container .avatar {
+    /* vertical-align: middle;*/
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /*display: inline-block;
+    vertical-align: bottom;*/
+    /*margin-top: 0.25rem;*/
+    background-image: url(/Images/Selfie.jpeg);
+    background-color: transparent;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    outline-style: none;
+  }
+  
+  /*.dropdown  {
+    display:flex ;
+    width: 8rem;
+    background: gray;
+    border: 1px gray;
+    
+  }*/
+
+  .container-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border: 1px solid gray;
+    margin: 0;
+    background: #c2bcbc;
+  }
+  
+  .container-main .text{
+    display:block;
+    color: red;
+  }
+  
+  .container-main .container-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 25%;
+    border: 3px solid red;
+    margin-left: 0;
+    padding-right: 2rem;
+    
+  }
+  
+  .container-left .Icons-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+            align-items: center ;
+    width: 30%;
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-right:30%;
+    padding-left: 6rem;
+    
+    background: #eef0f1;
+  }
+  
+  
+  .Icons-box a[href*="https://"] {
+    display: inline-block;
+    margin: 1rem;
+    padding-top: 0.25rem;
+    padding-left: 4rem;
+    width: 2rem;
+    height: 2rem;
+   
+    border: none;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  a.btn#btn-h {
+    background: url(/Images/Icon_Home.svg) no-repeat;
+    }
+  
+  a.btn#btn-RL {
+    background:url(/Images/Icon_ReadingList.svg) no-repeat;
+  }
+  
+  a.btn#btn-L {
+    background:url(/Images/Icon_Lists.svg) no-repeat;
+  }
+  
+  a.btn#btn-Pod {
+    background: url(/Images/Icon_Podcasts.svg) no-repeat;
+  }
+  
+  a.btn#btn-Vid {
+    background: url(/Images/Icon_Videos.svg) no-repeat;
+  }
+  
+  a.btn#btn-Tags {
+    background: url(/Images/Icon_Tags.svg) no-repeat;
+  }
+  
+  a.btn#btn-CoC {
+    background: url(/Images/Icon_CodeOfConduct.svg) no-repeat;
+  }
+  
+  a.btn#btn-FAQ {
+    background: url(/Images/Icon_FAQ.svg) no-repeat;
+  }
+  
+  a.btn#btn-DevS {
+    background: url(/Images/Icon_DevShop.svg) no-repeat;
+  }
+  
+  a.btn#btn-About {
+    background: url(/Images/Icon_About.svg) no-repeat;
+  }
+  
+  a.btn#btn-PP {
+    background: url(/Images/Icon_PrivacyPolicy.svg) no-repeat;
+  }
+  
+  a.btn#btn-Terms {
+    background: url(/Images/Icon_TermsOfUse.svg) no-repeat;
+  }
+  
+  a.btn#btn-Cnt {
+    background: url(/Images/Icon_Comtact.svg) no-repeat;
+  }
+  
+  .container-left  .bottom-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    border: none;
+    background-color: #eef0f1;
+  }
+  
+  .bottom-box a[href*="https://"] {
+    display:inline-block;
+  
+    color: #eef0f1;
+  
+    width: 2rem;
+    height: 2rem;;
+  
+    border:none;
+  
+   }
+  
+  a.btn-social#Twitter {
+    background: url(/Images/Icon_twitter.svg) no-repeat;
+    
+    
+  }
+  
+  a.btn-social#Facebook {
+    background: url(/Images/Icon_Facebook.svg) no-repeat;
+    }
+  
+  a.btn-social#Github {
+    background: url(/Images/Icon_Cat.svg) no-repeat;
+  }
+  
+  a.btn-social#Insta {
+    background: url(/Images/Icon_Instagram.svg) no-repeat;
+  }
+  
+  
+  a.btn-social#Insta {
+    background: url(/Images/Icon_Instagram.svg) no-repeat;
+  }
+  
+  a.btn-social#Twitch {
+    background: url(/Images/Icon_Twitch.svg) no-repeat;
+  }
