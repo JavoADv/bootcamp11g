@@ -21,9 +21,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  width: 25%;
   border: 3px solid red;
   margin-left: 0;
+  padding-right: 2rem;
   
 }
 
@@ -40,11 +41,12 @@
           justify-content: space-between;
           align-items: center ;
   width: 30%;
-  border: 1px solid gray;
+  border: none;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-right:30%;
+  padding-left: 6rem;
   
   background: #eef0f1;
 }
@@ -58,7 +60,7 @@
   width: 2rem;
   height: 2rem;
  
-  border: 1px solid blue;
+  border: none;
   text-decoration: none;
   text-align: center;
 }
@@ -115,37 +117,60 @@ a.btn#btn-Cnt {
   background: url(/Images/Icon_Comtact.svg) no-repeat;
 }
 
-
-.container-left .text-box {
-  display:flex;
-  flex-direction: column;
-  width: 40%;
-  border: 1px solid blue;
-  background: skyblue;
-
-}
-
-.container-main .Icons-box .Icons {
-  width: 1.5rem;
-  margin: 0.5rem;
-}
-
 .container-left  .bottom-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 80%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-around;
-  background: url(/Images/Icon_twitter.svg) no-repeat;
-  padding-left: 2rem;
   padding-top: 2rem;
-  border: 2px solid greenyellow;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  border: none;
+  background-color: #eef0f1;
 }
 
-.container-main .Icons-box .bottom-box .Icons {
-  width: 1.5rem;
-  margin: 0.5rem;
+.bottom-box a[href*="https://"] {
+  display:inline-block;
+
+  color: #eef0f1;
+
+  width: 2rem;
+  height: 2rem;;
+
+  border:none;
+
+ }
+
+a.btn-social#Twitter {
+  background: url(/Images/Icon_twitter.svg) no-repeat;
+  
+  
 }
+
+a.btn-social#Facebook {
+  background: url(/Images/Icon_Facebook.svg) no-repeat;
+  }
+
+a.btn-social#Github {
+  background: url(/Images/Icon_Cat.svg) no-repeat;
+}
+
+a.btn-social#Insta {
+  background: url(/Images/Icon_Instagram.svg) no-repeat;
+}
+
+
+a.btn-social#Insta {
+  background: url(/Images/Icon_Instagram.svg) no-repeat;
+}
+
+a.btn-social#Twitch {
+  background: url(/Images/Icon_Twitch.svg) no-repeat;
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
