@@ -176,6 +176,8 @@ a.btn-social#Twitch {
   width: 60%;
   display: flex;
 
+  
+
   border: 1px solid blueviolet;
 } 
 
@@ -188,6 +190,7 @@ a.btn-social#Twitch {
   align-items: center;
   border: 1px dotted red;
   box-sizing: border-box;
+  background-color: #eef0f1;
 }
 
 .text-post {
@@ -219,7 +222,7 @@ a.btn-social#Twitch {
 
 .container-posts * button:active{
   border-bottom: 3px  solid #3b49df;
-  transform: scale(1.2);
+ /* transform: scale(1.2);*/
 }
 
 
