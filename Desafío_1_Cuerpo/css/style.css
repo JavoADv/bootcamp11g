@@ -172,28 +172,43 @@ a.btn-social#Twitch {
 }
 /*Fin Primera parte: Left container, botones redes, botones*/
 
-.container-posts {
-  width: 60%;
+
+.container-center{
+  width: 70%;
+  display:flex;
+  flex-direction: column;
+  padding: 0;
+  border: 3px dotted rgb(217, 255, 0);
+}
+
+.container-center .container-posts {
+  width: 100%;
+  height: 10%;
   display: flex;
-
+  border: 2px solid rgb(80, 1, 80);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-right: 6rem;
+  box-sizing: border-box;
+  background-color: #eef0f1;
   
-
-  border: 1px solid blueviolet;
 } 
 
-.header-posts {
+.container-center .header-posts {
   width: 100%;
   height: 5%;
   display:flex;
   flex-direction: row;
+  padding: 1rem 10rem 1rem 1rem;
+  margin:0;
   justify-content: flex-end;
   align-items: center;
-  border: 1px dotted red;
+  border: none;
   box-sizing: border-box;
   background-color: #eef0f1;
 }
 
-.text-post {
+.header-posts .text-post {
   
   float: left;
   margin: 0;
@@ -202,7 +217,7 @@ a.btn-social#Twitch {
   font-size: x-large;
 }
 
-.container-posts * button{
+.container-center .container-posts * button{
   width: 3rem;
   height: 2rem;
   margin: 1rem;
@@ -227,14 +242,64 @@ a.btn-social#Twitch {
 
 
 
-
-.container-listings {
-  width: 40%;
+.top-post  {
+  width: 90%;
+  height: 20rem;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px dotted rgb(10, 69, 117);
 
-  border: 1px solid rgb(97, 6, 56);
-} 
+  padding: 0 0 0 2rem;
+  flex-wrap: wrap;
+  
+  
+  }
 
+.top-post .youtua-pic {
+  width: 100%;
+  height: 70rem;
+  background: url(/Images/Youtua.png) no-repeat;
+  margin: 0 0 0 3rem;
+  display: block;
+  
+}
 
+.top-post .top-post-bottom {
+  width: 88%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background:  #ffffff;
+
+  padding: 0 0.1rem 10rem 2rem;
+  margin-top:0rem;
+  display: inline-block;
+  flex-wrap: wrap;
+  
+  }
+
+/*.dropdown-posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 4px dotted rgb(255, 6, 6);
+  background: url(/Images/Youtua.png) no-repeat;
+}*/
+  
+.container-right {
+  width: 60%;
+  display: flex;
+  background: chartreuse;
+  border: 5px dotted rgb(7, 250, 209);
+
+  margin: 0 0 0 3rem;
+
+}
 
 
