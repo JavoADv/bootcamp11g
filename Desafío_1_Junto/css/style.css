@@ -1,6 +1,7 @@
 * {
   font-family: "Nunito", sans-serif;
 }
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,15 +107,22 @@
   outline-style: none;
 }
 
-/*Cuerpo*/
-.container-main {
+/*.dropdown  {
+  display:flex ;
+  width: 8rem;
+  background: gray;
+  border: 1px gray;
+  
+}*/
+.container-main { /*Avance domingo*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   border: 1px solid gray;
   margin: 0;
-  background: #c2bcbc;
+  background: #eef0f1;
+  border: none;
 }
 
 .container-main .text{
@@ -131,7 +139,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 25%;
-  border: 3px solid red;
+  border: none; /*3px solid red;*/
+  background-color: #eef0f1;
   margin-left: 0;
   padding-right: 2rem;
   
@@ -281,40 +290,57 @@ a.btn-social#Twitch {
 }
 /*Fin Primera parte: Left container, botones redes, botones*/
 
-.container-posts {
-  width: 60%;
+
+.container-center{
+  width: 55%;
+  display:flex;
+  flex-direction: column;
+  padding: 0;
+  border:none; /*3px dotted rgb(217, 255, 0);*/
+  background-color: #eef0f1;
+}
+
+.container-center .container-posts {
+  width: 100%;
+  height: 10%;
   display: flex;
-
+  border: none; /*2px solid rgb(80, 1, 80);*/
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-right: 6rem;
+  box-sizing: border-box;
+  background-color: #eef0f1;
   
-
-  border: 1px solid blueviolet;
 } 
 
-.header-posts {
+.container-center .header-posts {
   width: 100%;
   height: 5%;
   display:flex;
   flex-direction: row;
+  padding: 1rem 10rem 1rem 1rem;
+  margin:0;
   justify-content: flex-end;
   align-items: center;
-  border: 1px dotted red;
+  border: none;
   box-sizing: border-box;
   background-color: #eef0f1;
 }
 
-.text-post {
+.header-posts .text-post {
   
   float: left;
   margin: 0;
   padding-right: 10rem;
   color:#202428;
   font-size: x-large;
+  border:none;
 }
 
-.container-posts * button{
-  width: 3rem;
+.container-center .container-posts * button{
+  width: 4rem;
   height: 2rem;
-  margin: 1rem;
+  margin: 0rem;
   box-sizing: border-box;
   border: none;
   background-color:  #eef0f1;
@@ -330,18 +356,122 @@ a.btn-social#Twitch {
 }
 
 .container-posts * button:active{
-  border-bottom: 3px  solid #3b49df;
- /* transform: scale(1.2);*/
+  border-bottom:3px  solid #3b49df;
+  transform: scale(1.2);
 }
 
 
 
+.top-post  {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none /*4px dotted rgb(10, 69, 117);*/
+
+  padding: 0;
+  flex-wrap: wrap;
+  
+  
+  }
+
+.top-post .youtua-pic {
+  width: 100%;
+  height: 70rem;
+  background: url(/Images/Youtua.png) no-repeat;
+  margin: 0 8rem 0 0 rem;
+  display: block;
+  
+}
+
+/*.top-post .top-post-bottom {
+  width: 88%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background:  #ffffff;
+
+  padding: 0 0.1rem 10rem 2rem;
+  margin-top:0rem;
+  display: inline-block;
+  flex-wrap: wrap;
+  
+  }*/
+
+/*.dropdown-posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 4px dotted rgb(255, 6, 6);
+  background: url(/Images/Youtua.png) no-repeat;
+}*/
+  
+.container-right {
+  width: 60%;
+  display: flex;
+  background:  #eef0f1;/* chartreuse;*/
+  border:none /*5px dotted rgb(7, 250, 209);*/
+  padding-right: 4rem;
+
+  margin: 0 0 0 3rem;
+
+}
 
 .container-listings {
-  width: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background:  #eef0f1;/*rgb(255, 251, 0);*/
+  border:none ;/*4px dotted rgb(252, 10, 10);*/
+}
+
+.listing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #f9fafa;
+  border: /*2px dotted black;*/;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 0rem 2rem 0rem 2rem;
+  margin: 0;
+}
+
+ul.listing * {
+  text-decoration: none;
+  color: #797a7e;
+}
+
+ul.listing *:hover {
+  text-decoration: none;
+  color:  #3a44c4;
+  background-color:#ffffff ;
+}
+
+ul > div {
   display: flex;
 
-  border: 1px solid rgb(97, 6, 56);
-} 
+  justify-content: center;
+  align-items: center;
 
-/*Último Avance 23:06 06/03/21*/
+  width: 118%;
+  height: 6rem;
+  padding: 0.5rem;
+  margin:0;
+
+  box-sizing: border-box;
+
+  border-top: 1px solid  #797a7e;
+
+  flex-wrap: wrap;
+} /*Fin avance domingo*/
