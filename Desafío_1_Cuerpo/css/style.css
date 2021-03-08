@@ -1,4 +1,4 @@
-.container-main {
+.container-main { /*Avance domingo*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,6 +6,7 @@
   border: 1px solid gray;
   margin: 0;
   background: #eef0f1;
+  border: none;
 }
 
 .container-main .text{
@@ -221,9 +222,9 @@ a.btn-social#Twitch {
 }
 
 .container-center .container-posts * button{
-  width: 1rem;
+  width: 4rem;
   height: 2rem;
-  margin: 1rem;
+  margin: 0rem;
   box-sizing: border-box;
   border: none;
   background-color:  #eef0f1;
@@ -235,12 +236,12 @@ a.btn-social#Twitch {
 .container-posts * button:hover{
   color: #3b49df;
   background-color: #dcdfef;
-  border-bottom: none; /*3px  solid #3b49df;*/
+  border-bottom: 3px  solid #3b49df;
 }
 
 .container-posts * button:active{
-  border-bottom: none; /*3px  solid #3b49df;*/
- /* transform: scale(1.2);*/
+  border-bottom:3px  solid #3b49df;
+  transform: scale(1.2);
 }
 
 
@@ -357,5 +358,5 @@ ul > div {
   border-top: 1px solid  #797a7e;
 
   flex-wrap: wrap;
-}
+} /*Fin avance domingo*/
 
