@@ -1,0 +1,36 @@
+*{
+    font-size: 13px;
+    font-family: [Barlow Semi Condensed];
+    color:hsl(0, 0%, 100%);
+
+}
+
+.container-main {
+    width: 100%;
+}
+
+.bg-violet {
+    background-color: hsl(263, 55%, 52%);
+}
+
+.b-radius {
+    border-radius: 5%;
+}
+.avatar{ 
+    border-radius: 50%;
+    width: 4rem;   
+}
+
+.quotation-box { 
+    position: relative;
+}
+.quotation {
+    width: 8rem;
+    overflow:visible;
+    position: absolute;
+}
+
+.header-1 {
+    position: relative;
+}
+/*# sourceMappingURL=style.css.map */

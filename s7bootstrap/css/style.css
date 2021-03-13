@@ -1,4 +1,24 @@
-.b-orange {
-  border: 2px solid orange;
+.border-orange {
+  border: 1px solid #eb8b0d;
+}
+
+.border-gold {
+  border: 1px solid gold;
+}
+
+.border-lblue {
+  border: 1px solid #04b5f0;
+}
+
+.border-violet {
+  border: 1px solid violet;
+}
+
+.border-green {
+  border: 1px solid #14f114;
+}
+
+.border-pink {
+  border: 1px solid #e082d1;
 }
 /*# sourceMappingURL=style.css.map */

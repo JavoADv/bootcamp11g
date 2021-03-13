@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+
+.card-white{
+    background-color: gray;
+    height: 300px;
+}
+
+.card-purple{
+    background-color:  hsl(263, 55%, 52%);
+    background-image: url(/testimonials-grid-section-main/images/) no-repeat;
+    color:White; hsl(0, 0%, 100%);
+}
+
+.card-grey{
+    background-color: rgb(72, 72, 105);
+}
+
+.card-black{
+    background-color: black;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    width: 2rem;;
+}
