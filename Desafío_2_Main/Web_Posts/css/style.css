@@ -1,6 +1,20 @@
+.post-bdr-style {
+  border: 1px solid #eef0f1;
+  -webkit-box-shadow: 1px 1px #eef0f1;
+          box-shadow: 1px 1px #eef0f1;
+  border-radius: 8px;
+}
+
 .avatar-post {
   width: 4%;
   border-radius: 50%;
+}
+
+.post-web-icon {
+  width: 5%;
+  display: inline;
+  padding-left: 30px;
+  padding-right: 0;
 }
 
 .post-icon-text {
@@ -14,7 +28,7 @@
 }
 
 a.post-web-icon#post-heart {
-  background: url(/Images/Images/Icon_PostHeart.svg) no-repeat;
+  background: url(/Images/Icon_PostHeart.svg) no-repeat;
 }
 
 a.post-web-icon#post-comment {

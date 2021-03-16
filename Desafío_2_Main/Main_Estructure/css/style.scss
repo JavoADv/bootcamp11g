@@ -9,6 +9,14 @@ $white-bg:white;
     background-color:$white-bg;
 }
 
+.fx-nav-bar{
+ /* position: fixed;
+  overflow: hidden;
+  z-index: 1;*/
+  border:1px solid $main-bg;
+}
+
+
 .h-nav-bar { /* NavBar Web Insert*/
     height: 4rem;
   }
@@ -524,3 +532,51 @@ a.post-web-icon#post-comment {
   background-color:#ffff ;
 }
 /*RIGHT LIST INSERT END*/
+
+.post-bdr-style{ /*POSTS INSERT*/
+  border:10px solid #e71313;
+  box-shadow: 1px 1px #bcdd27;
+  border-radius: 8px;
+}
+
+.avatar-post{
+  width: 4%;
+  border-radius: 50%;
+}
+
+.post-web-icon{
+  width: 5%;
+  display: inline;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.post-icon-text {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.post-icon-text-avatar {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+a.post-web-icon#post-heart {
+  background: url(/Images/Icon_PostHeart.svg) no-repeat;
+}
+
+a.post-web-icon#post-comment {
+  background: url(/Images/Images/Icon_PostComment.svg) no-repeat;
+}
+
+.post-icon-text-right {
+  font-size: small;
+  display: inline-block;
+  margin-right: px;
+}
+
+
+.post-web-icon-right{
+  padding-left: 260px;
+  padding-top: 10px;
+}/*END POSTS
