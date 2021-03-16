@@ -1,0 +1,121 @@
+@mixin btn-nav-spacing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$devblue: #3b49df;
+
+.h-nav-bar{
+    height: 4rem;
+    
+}
+
+.padding-nav-dev-logo {
+    padding-left: 15%;
+    padding-right: 0;
+}
+
+.logo-nav {
+    width: 65%;
+    height: 70%;
+    border: 1px solid black;
+    margin: 8px 10px 5px 10px;
+    @include btn-nav-spacing;
+    background-color: 
+    #08090a;
+    color:#ffffff;
+    border-radius: 2.5px;
+}
+
+.search-nav-bar{
+    display: inline-block;
+    width: 70%;
+    height: 47px;
+    vertical-align: middle;
+    border: 1px solid #cad0d5;
+    border-radius: 3px;
+    background-color: #f9fafa;
+:focus{
+    outline-style: none;
+    border: 1px solid #3b49df;
+    box-shadow: 1px 2px #3b49df;
+    background-color: 
+    #ffffff;
+}
+}
+
+.btn-nav{
+    background-color: $devblue ;
+    @include btn-nav-spacing;
+    width: 16%;
+    height: 75%;
+    margin-top: 10px;
+    }
+
+.btn-nav-icon {
+    display: inline-block;
+    width: 5%;
+:hover {
+        /*outline-style: groove;*/
+        outline-color:#d2d6db;
+        background:#d2d6db ;
+        border:2px solid #d2d6db;
+        border-radius: 50%;
+    }
+}
+
+#btn-connect{
+    background: url(/Images/Icon_Balloon.svg) no-repeat;
+    margin:15px 15px 10px 35px;
+    
+}
+
+#btn-noti{
+    background: url(/Images/Icon_Bell.svg) no-repeat;
+    margin:15px 15px 10px 5px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-image: url(/Images/Selfie.jpeg) no-repeat;
+    background-color: transparent;
+    outline:none;
+    margin: 10px 125px 10px 5px;
+}
+    
+
+#dropdown-nav-menu { 
+    position: relative;
+    display: inline-block;
+    
+    color: #797a7e;
+}
+
+.dropdown-nav-content {
+    color:#797a7e;
+}
+
+#content-nav-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 12rem;
+    border-top: 1px solind #202428;
+    z-index: 1;
+    border-radius: 1.5%;
+    background-color: #eef0f1;
+    right: 130px;
+    top: 70px;
+  }
+
+ #dropdown-nav-menu:hover #content-nav-dropdown {
+    display: block;
+    box-shadow: 2px 3px 1px 2px 
+    #202428;
+   }
+
+
+  
+  

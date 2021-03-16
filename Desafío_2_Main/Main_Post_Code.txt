@@ -1,0 +1,145 @@
+  <div class="row p-0 m-0 card-box"> <!--Card Wraper-->
+        <div class="col-12 header-posts">
+            <h1 class="text-post">Posts</h1>
+                    <button class="post-btn">Feed</button>
+                    <button class="post-btn">Week</button>
+                    <button class="post-btn">Month</button>
+                    <button class="post-btn">Year</button>
+                    <button class="post-btn">Infinity</button>
+                    <button class="post-btn">Latest</button>
+        </div>
+        <div class="col-12 p-0">
+            <img src="Images/Images/Image_Main_Post.png" class="img-top" alt="PostS">
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12  d-flex align-items-center">
+                    <img src="Images/Images/Image_Sebastian.jpeg" class="avatar-post" alt="avatar">
+                    <p class="post-icon-text-avatar mt-3 mb-2 ml-3">Sebastian Rath<br>Mar 14 (1 day ago)</p>
+                </div>
+                <div class="col-12  pl-5">
+                    <h2 class="card-title ml-2">SnowFS ❄️ Let's bring version control to graphic projects</h2>
+                </div>
+                <div class="col-12  d-flex justify-content-around">
+                    <h7>#opensource</h7>
+                    <h7>#typescript</h7>
+                    <h7>#javascript</h7>
+                    <h7>#productivity</h7>
+                </div>
+                <div class="col-12 ">
+                    <div class="row">
+                        <div class="col-6  pt-3 pb-3">
+
+                            <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8" class="post-web-icon " id="post-heart"></a>
+                                <h6 class="post-icon-text">33 reactions</h6>
+
+                            <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8#comments" class="post-web-icon" id="post-comment"></a>
+                            <h6 class="post-icon-text">3 comments</h6>
+
+                        </div>
+                        <div class="col-6  post-web-icon-right">
+                            <h6 class="post-icon-text-right">2 min read</h6>
+                            <button type="button" class="btn btn-light post-web-icon-righ">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div><!--Fin Card Wraper-->
+
+.card-box {
+    width: 815px;
+}
+
+.avatar-post{
+    width: 4%;
+    border-radius: 50%;
+}
+
+.header-posts {
+    width: 100%;
+    height: 5%;
+    display:flex;
+    flex-direction: row;
+    padding: 1rem 0rem 1rem 0rem;
+    margin:0;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    box-sizing: border-box;
+    background-color: #eef0f1;
+    button{
+        width: 4rem;
+        height: 2rem;
+        margin: 0rem;
+        box-sizing: border-box;
+        border: none;
+        background-color:  #eef0f1;
+        outline: none;
+        cursor: pointer;
+        border-radius: 10%;
+      }
+    .text-post {
+        float: left;
+        margin: 0;
+        padding-right: 25rem;
+        color:#202428;
+        font-size: x-large;
+        border:none;
+      }
+  }
+
+  .post-btn:hover{
+    color: #3b49df;
+    background-color: #dcdfef;
+    border-bottom: 3px  solid #3b49df;
+  }
+
+ .post-btn:active{
+    border-bottom:3px  solid #3b49df;
+    transform: scale(1.2);
+  }
+
+.img-top {
+    width: 100%;
+    padding: 0;
+}
+
+.post-web-icon{
+    width: 5%;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.post-icon-text {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.post-icon-text-avatar {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+a.post-web-icon#post-heart {
+    background: url(/Images/Images/Icon_PostHeart.svg) no-repeat;
+}
+
+a.post-web-icon#post-comment {
+    background: url(/Images/Images/Icon_PostComment.svg) no-repeat;
+}
+
+.post-icon-text-right {
+    font-size: small;
+    display: inline-block;
+    margin-right: px;
+}
+
+
+.post-web-icon-right{
+    padding-left: 260px;
+    padding-top: 10px;
+}
+
+
+

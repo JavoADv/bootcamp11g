@@ -1,0 +1,239 @@
+    <div class="container b-main m-0"> <!--Inicio container-->
+        <div class="row"><!--Inicio Row-->
+            <div class="col-lg-12  pt-4 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/" class="btn" id="btn-h"></a>
+                <h6 class="header-Icons">Home</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/readinglist"  class="btn" id="btn-RL"></a>
+                <h6 class="header-Icons">Reading List</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/listings"  class="btn" id="btn-L"></a>
+                <h6 class="header-Icons">Listings</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/pod"  class="btn" id="btn-Pod"></a>
+                <h6 class="header-Icons">Podcasts</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/videos"  class="btn" id="btn-Vid"></a>
+                <h6 class="header-Icons">Videos</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/tags"  class="btn" id="btn-Tags"></a>
+                <h6 class="header-Icons">Tags</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/code-of-conduct"  class="btn" id="btn-CoC"></a>
+                <h6 class="header-Icons">Code of Conduct</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/faq"  class="btn" id="btn-FAQ"></a>
+                <h6 class="header-Icons">FAQ</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://shop.dev.to/"  class="btn" id="btn-DevS"></a>
+                <h6 class="header-Icons">Dev Shop</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/about"  class="btn" id="btn-Sponsors"></a>
+                <h6 class="header-Icons">Sponsors</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/about"  class="btn" id="btn-About"></a>
+                <h6 class="header-Icons">About</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="hhttps://dev.to/privacyt"  class="btn" id="btn-PP"></a>
+                <h6 class="header-Icons">Privacy Policy</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/terms"  class="btn" id="btn-Terms"></a>
+                <h6 class="header-Icons">Terms</h6>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                <a href="https://dev.to/contact"  class="btn" id="btn-Cnt">t</a>
+                <h6 class="header-Icons">Contact</h6>
+            </div>
+            <div class="col-lg-12  pt-5 pb-2 social-box pad-web-left-social">
+                <a href="https://twitter.com/thepracticaldev"   class="btn-social" id="Twitter"></a>
+                <a href="https://www.facebook.com/thepracticaldev"  class="btn-social" id="Facebook"></a>
+                <a href="https://github.com/thepracticaldev" class="btn-social" id="Github"></a>
+                <a href="https://www.instagram.com/thepracticaldev/" class="btn-social" id="Insta"></a>
+                <a href="https://www.twitch.tv/thepracticaldev" class="btn-social" id="Twitch"></a>
+            </div>
+            <div class="col-lg-12  pt-2 pb-2 social-box pad-web-left-reason d-flex justify-content-center">
+                <h6 class="header-Icon-reason">My Tags</h6>
+                <a href="https://dev.to/dashboard/following_tags" class="btn-social" id="Reason"></a>
+            </div>
+            
+            <div class="col-lg-12  pt-2 pb-2 pad-web-left-shop">
+
+                <div class="card card-bg" style="width: 18rem;">
+                    <img src="Images/Images/Image_Shop.jpg" class="card-img-top" alt="Shop">
+                    <div class="card-body card-txt-align">
+                    <a href="https://shop.dev.to/products/sticker-pack-1" class="btn-shop">Get Your Stickers!</a>
+                    </div>
+            </div>
+            
+            
+        </div> <!--Fin row-->
+    </div><!--Fin  container-->
+
+.b-main {
+  border: none;
+  width: 490px;
+  background-color: #eef0f1;
+}
+
+.header-Icons {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.header-Icon-reason {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.pad-web-left {
+  padding-left: 210px;
+}
+
+.pad-web-left-social {
+  padding-left: 230px;
+}
+
+.pad-web-left-reason {
+  padding-left: 200px;
+}
+
+.pad-web-left-shop {
+  padding-left: 170px;
+}
+
+.icons-list-web a[href*="https://"] {
+  display: inline;
+  margin: 2.5px;
+  padding-top: 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.btn#btn-h {
+  background: url(/Images/Icon_Home.svg) no-repeat;
+}
+
+a.btn#btn-RL {
+  background: url(/Images/Icon_ReadingList.svg) no-repeat;
+}
+
+a.btn#btn-L {
+  background: url(/Images/Icon_Lists.svg) no-repeat;
+}
+
+a.btn#btn-Pod {
+  background: url(/Images/Icon_Podcasts.svg) no-repeat;
+}
+
+a.btn#btn-Vid {
+  background: url(/Images/Icon_Videos.svg) no-repeat;
+}
+
+a.btn#btn-Tags {
+  background: url(/Images/Icon_Tags.svg) no-repeat;
+}
+
+a.btn#btn-CoC {
+  background: url(/Images/Icon_CodeOfConduct.svg) no-repeat;
+}
+
+a.btn#btn-FAQ {
+  background: url(/Images/Icon_FAQ.svg) no-repeat;
+}
+
+a.btn#btn-DevS {
+  background: url(/Images/Icon_DevShop.svg) no-repeat;
+}
+
+a.btn#btn-Sponsors {
+  background: url(/Images/Icon_Sponsors.svg) no-repeat;
+}
+
+a.btn#btn-About {
+  background: url(/Images/Icon_About.svg) no-repeat;
+}
+
+a.btn#btn-PP {
+  background: url(/Images/Icon_PrivacyPolicy.svg) no-repeat;
+}
+
+a.btn#btn-Terms {
+  background: url(/Images/Icon_TermsOfUse.svg) no-repeat;
+}
+
+a.btn#btn-Cnt {
+  background: url(/Images/Icon_Comtact.svg) no-repeat;
+}
+
+.social-box a[href*="https://"] {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+
+a.btn-social#Twitter {
+  background: url(/Images/Icon_twitter.svg) no-repeat;
+}
+
+a.btn-social#Facebook {
+  background: url(/Images/Icon_Facebook.svg) no-repeat;
+}
+
+a.btn-social#Github {
+  background: url(/Images/Icon_Cat.svg) no-repeat;
+}
+
+a.btn-social#Insta {
+  background: url(/Images/Icon_Instagram.svg) no-repeat;
+}
+
+a.btn-social#Insta {
+  background: url(/Images/Icon_Instagram.svg) no-repeat;
+}
+
+a.btn-social#Twitch {
+  background: url(/Images/Icon_Twitch.svg) no-repeat;
+}
+
+a.btn-social#Reason {
+  background: url(/Images/Icon_Reason.svg) no-repeat;
+  margin-right: 10px;
+  margin-left: 140px;
+  margin-top: 25px;
+}
+
+.card-bg {
+  background-color: #eef0f1;
+  border: none;
+}
+
+.btn-shop {
+  font-size: x-large;
+  color: #3b49df;
+  background-color: #eef0f1;
+}
+
+.card-txt-align {
+  text-align: center;
+}
+
+.card-txt-align:hover {
+  text-decoration: none;
+  color: orangered;
+}

@@ -1,0 +1,94 @@
+.card-box {
+    width: 815px;
+}
+
+.avatar-post{
+    width: 4%;
+    border-radius: 50%;
+}
+
+.header-posts {
+    width: 100%;
+    height: 5%;
+    display:flex;
+    flex-direction: row;
+    padding: 1rem 0rem 1rem 0rem;
+    margin:0;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    box-sizing: border-box;
+    background-color: #eef0f1;
+    button{
+        width: 4rem;
+        height: 2rem;
+        margin: 0rem;
+        box-sizing: border-box;
+        border: none;
+        background-color:  #eef0f1;
+        outline: none;
+        cursor: pointer;
+        border-radius: 10%;
+      }
+    .text-post {
+        float: left;
+        margin: 0;
+        padding-right: 25rem;
+        color:#202428;
+        font-size: x-large;
+        border:none;
+      }
+  }
+
+  .post-btn:hover{
+    color: #3b49df;
+    background-color: #dcdfef;
+    border-bottom: 3px  solid #3b49df;
+  }
+
+ .post-btn:active{
+    border-bottom:3px  solid #3b49df;
+    transform: scale(1.2);
+  }
+
+.img-top {
+    width: 100%;
+    padding: 0;
+}
+
+.post-web-icon{
+    width: 5%;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.post-icon-text {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.post-icon-text-avatar {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+a.post-web-icon#post-heart {
+    background: url(/Images/Images/Icon_PostHeart.svg) no-repeat;
+}
+
+a.post-web-icon#post-comment {
+    background: url(/Images/Images/Icon_PostComment.svg) no-repeat;
+}
+
+.post-icon-text-right {
+    font-size: small;
+    display: inline-block;
+    margin-right: px;
+}
+
+
+.post-web-icon-right{
+    padding-left: 260px;
+    padding-top: 10px;
+}

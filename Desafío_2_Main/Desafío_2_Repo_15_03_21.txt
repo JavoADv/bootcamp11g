@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Práctica Uno</title>
+</head>
+<body>
+
+    <div class="row">
+        <!--Versión Web-->
+        <div class="d-none col-md-12 d-md-block m-0 border border-primary"><!--NavBar Web Insert-->
+            <div class="row m-0 p-0 h-nav-bar"><!--MAIN ROW-->
+           
+                <div class="col-6"> <!--NAVBAR LEFT-->
+                    <div class="row mt-1 mb-1 p-0 h-nav-bar"><!--ROW LEFT-LEFT-->
+    
+                        <div class="col-3  m-0 padding-nav-dev-logo"> <!--DEV LOGO-->
+                            <div class="logo-nav dev">DEV</div>
+                        </div> <!--FIN DEV LOGO-->
+    
+                        <div class="col-9 k m-0 p-0"> <!--SEARCH-->
+                            <nav class=" navbar-light pt-2 pb-2">
+                                <input class="search-nav-bar " type="search" placeholder="Search..." >
+                            </nav>
+                        </div><!--FIN SEARCH--> 
+    
+                    </div><!--ROW LEFT-LEFT-->
+                </div> <!--FIN NAVBAR LEFT--> 
+    
+                <!--NAVBAR RIGHT-->
+                <div class="col-6  pt-2 pb-2 d-flex justify-content-end"> 
+                    <a class="btn btn-primary btn-nav" href="https://dev.to/new" role="button">Write a post</a>
+                    <a href="https://dev.to/connect" class="btn-nav-icon" id="btn-connect" alt="connect"></a>
+                    <a href="https://dev.to/notifications" class="btn-nav-icon" id="btn-noti" alt="notifications"></a>
+    
+                    <div class="dropdwon" id="dropdown-nav-menu"> <!--DROPDOWN-->
+                        <input type="image" src="Images/Selfie.jpeg" class="avatar" aria-expanded="true" >
+                        <div class="dropdown-nav-content" id="content-nav-dropdown">
+                            <a  href="https://dev.to/javoadv">Javier Arredondo<br>@javoadv</a>
+                            <a href="https://dev.to/dashboard"><br>Dashboard</a>
+                            <a href="https://dev.to/new"><br>Write a Post</a>
+                            <a href="https://dev.to/readinglist"><br>Reading list</a>
+                            <a href="https://dev.to/settings"><br>Settings</a>
+                            <a href="https://dev.to/"><br>Sign out</a>
+                        </div>
+                    </div><!--FIN  DROPDOWN-->
+                </div><!--FIN NAVBAR RIGHT-->
+    
+            </div>
+
+        </div><!--NavBar Web End-->
+        <div class="d-none col-md-3 d-md-block border ml-md-5 m-lg-0 p-lg-0 border-danger"><!--LEFT LIST BAR INSERT-->
+            <div class="container b-main m-0"> <!--Inicio container-->
+                <div class="row"><!--Inicio Row-->
+                    <div class="col-lg-12  pt-4 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/" class="btn" id="btn-h"></a>
+                        <h6 class="header-Icons">Home</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/readinglist"  class="btn" id="btn-RL"></a>
+                        <h6 class="header-Icons">Reading List</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/listings"  class="btn" id="btn-L"></a>
+                        <h6 class="header-Icons">Listings</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/pod"  class="btn" id="btn-Pod"></a>
+                        <h6 class="header-Icons">Podcasts</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/videos"  class="btn" id="btn-Vid"></a>
+                        <h6 class="header-Icons">Videos</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/tags"  class="btn" id="btn-Tags"></a>
+                        <h6 class="header-Icons">Tags</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/code-of-conduct"  class="btn" id="btn-CoC"></a>
+                        <h6 class="header-Icons">Code of Conduct</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/faq"  class="btn" id="btn-FAQ"></a>
+                        <h6 class="header-Icons">FAQ</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://shop.dev.to/"  class="btn" id="btn-DevS"></a>
+                        <h6 class="header-Icons">Dev Shop</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/about"  class="btn" id="btn-Sponsors"></a>
+                        <h6 class="header-Icons">Sponsors</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/about"  class="btn" id="btn-About"></a>
+                        <h6 class="header-Icons">About</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="hhttps://dev.to/privacyt"  class="btn" id="btn-PP"></a>
+                        <h6 class="header-Icons">Privacy Policy</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/terms"  class="btn" id="btn-Terms"></a>
+                        <h6 class="header-Icons">Terms</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/contact"  class="btn" id="btn-Cnt">t</a>
+                        <h6 class="header-Icons">Contact</h6>
+                    </div>
+                    <div class="col-lg-12  pt-5 pb-2 social-box pad-web-left-social">
+                        <a href="https://twitter.com/thepracticaldev"   class="btn-social" id="Twitter"></a>
+                        <a href="https://www.facebook.com/thepracticaldev"  class="btn-social" id="Facebook"></a>
+                        <a href="https://github.com/thepracticaldev" class="btn-social" id="Github"></a>
+                        <a href="https://www.instagram.com/thepracticaldev/" class="btn-social" id="Insta"></a>
+                        <a href="https://www.twitch.tv/thepracticaldev" class="btn-social" id="Twitch"></a>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 social-box pad-web-left-reason d-flex justify-content-center">
+                        <h6 class="header-Icon-reason">My Tags</h6>
+                        <a href="https://dev.to/dashboard/following_tags" class="btn-social" id="Reason"></a>
+                    </div>
+                    
+                    <div class="col-lg-12  pt-2 pb-2 pad-web-left-shop">
+        
+                        <div class="card card-bg" >
+                            <img src="Images/Images/Image_Shop.jpg" class="card-img-top" alt="Shop">
+                            <div class="card-body card-txt-align">
+                            <a href="https://shop.dev.to/products/sticker-pack-1" class="btn-shop">Get Your Stickers!</a>
+                            </div>
+                    </div>
+                    
+                    
+                </div> <!--Fin row-->
+            </div><!--Fin  container-->
+        </div>
+        </div><!--LEFT LIST BAR END-->
+        <div class="d-none col-md-5 d-md-block border m-md-0 m-lg-0 p-lg-0 border-danger bg-main"><!--MAIN POST INSERT-->
+            <div class="row p-0 m-0 card-box"> <!--Card Wraper-->
+                <div class="col-12 header-posts">
+                    <h1 class="text-post">Posts</h1>
+                            <button class="post-btn">Feed</button>
+                            <button class="post-btn">Week</button>
+                            <button class="post-btn">Month</button>
+                            <button class="post-btn">Year</button>
+                            <button class="post-btn">Infinity</button>
+                            <button class="post-btn">Latest</button>
+                </div>
+                <div class="col-12 p-0">
+                    <img src="Images/Images/Image_Main_Post.png" class="img-top" alt="PostS">
+                </div>
+                <div class="col-12 bg-white">
+                    <div class="row">
+                        <div class="col-12  d-flex align-items-center">
+                            <img src="Images/Images/Image_Sebastian.jpeg" class="avatar-post" alt="avatar">
+                            <p class="post-icon-text-avatar mt-3 mb-2 ml-3">Sebastian Rath<br>Mar 14 (1 day ago)</p>
+                        </div>
+                        <div class="col-12  pl-5">
+                            <h2 class="card-title ml-2">SnowFS ❄️ Let's bring version control to graphic projects</h2>
+                        </div>
+                        <div class="col-12  d-flex justify-content-around">
+                            <h7>#opensource</h7>
+                            <h7>#typescript</h7>
+                            <h7>#javascript</h7>
+                            <h7>#productivity</h7>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="row">
+                                <div class="col-6  pt-3 pb-3">
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8" class="post-web-icon " id="post-heart"></a>
+                                        <h6 class="post-icon-text">33 reactions</h6>
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8#comments" class="post-web-icon" id="post-comment"></a>
+                                    <h6 class="post-icon-text">3 comments</h6>
+        
+                                </div>
+                                <div class="col-6  post-web-icon-right">
+                                    <h6 class="post-icon-text-right">2 min read</h6>
+                                    <button type="button" class="btn btn-light post-web-icon-righ">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div><!--Fin Card Wraper-->
+
+        </div><!--MAIN POST END-->
+        </div>
+        <div class="d-none col-md-3 d-md-block border ml-md-0 border-danger">RIGHT</div> <!--FIn Versión Web-->
+
+        <!--Versión móvil-->
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-warning"><!--NAV BAR MOBILE Insert-->
+            <div class="row"> <!--Inicio Row-->
+                <!--DEV LOGO-->
+                <div class="col-6 border border-success d-flex align-items-center  padding-nav-dev-mobile"><!--Left mobile-->
+                    <input type="image" src="Images/Images/Icon_hamburguer.svg" class="hamburguer">
+                    <div class="logo-nav-mobile">DEV</div>
+                </div> <!--FIN DEV LOGO y FiN left mobile-->
+                
+                <div class="col-6 border border-danger"> <!--Inicio left mobile-->
+                    <!--a href="https://dev.to/connect" class="btn-nav-icon" id="btn-connect" alt="connect"></a-->
+                    
+        
+                        <div class="dropdwon" id="dropdown-nav-menu"> <!--DROPDOWN-->
+                            <input type="image" src="Images/Selfie.jpeg" class="avatar-mobile" >
+                            <div class="dropdown-nav-content" id="content-nav-dropdown">
+                                <a  href="https://dev.to/javoadv">Javier Arredondo<br>@javoadv</a>
+                                <a href="https://dev.to/dashboard"><br>Dashboard</a>
+                                <a href="https://dev.to/new"><br>Write a Post</a>
+                                <a href="https://dev.to/readinglist"><br>Reading list</a>
+                                <a href="https://dev.to/settings"><br>Settings</a>
+                                <a href="https://dev.to/"><br>Sign out</a>
+                            </div>
+                        </div><!--FIN  DROPDOWN-->
+                </div><!--Fin Lefto  mobile-->
+            </div>
+        
+        </div><!--NAV BAR MOBILE END--> 
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-secondary">TOP BAR MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div> <!--Fin versión móvil-->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+$main-bg: #eef0f1;
+$white-bg:white;
+
+.bg-main{
+    background-color:$main-bg ;
+}
+
+.bg-white {
+    background-color:$white-bg;
+}
+
+.h-nav-bar { /* NavBar Web Insert*/
+    height: 4rem;
+  }
+  
+  .padding-nav-dev-logo {
+    padding-left: 15%;
+    padding-right: 0;
+  }
+  
+  .logo-nav {
+    width: 65%;
+    height: 70%;
+    border: 1px solid black;
+    margin: 8px 10px 5px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #08090a;
+    color: #ffffff;
+    border-radius: 2.5px;
+  }
+  
+  .search-nav-bar {
+    display: inline-block;
+    width: 70%;
+    height: 47px;
+    vertical-align: middle;
+    border: 1px solid #cad0d5;
+    border-radius: 3px;
+    background-color: #f9fafa;
+  }
+  
+  .search-nav-bar:focus {
+    outline-style: none;
+    border: 1px solid #3b49df;
+    -webkit-box-shadow: 1px 2px #3b49df;
+            box-shadow: 1px 2px #3b49df;
+    background-color: #ffffff;
+  }
+  
+  .btn-nav {
+    background-color: #3b49df;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 16%;
+    height: 75%;
+    margin-top: 10px;
+  }
+  
+  .btn-nav-icon {
+    display: inline-block;
+    width: 5%;
+  }
+  
+  .btn-nav-icon :hover {
+    /*outline-style: groove;*/
+    outline-color: #d2d6db;
+    background: #d2d6db;
+    border: 2px solid #d2d6db;
+    border-radius: 50%;
+  }
+  
+  #btn-connect {
+    background: url(/Images/Icon_Balloon.svg) no-repeat;
+    margin: 15px 15px 10px 35px;
+  }
+  
+  #btn-noti {
+    background: url(/Images/Icon_Bell.svg) no-repeat;
+    margin: 15px 15px 10px 5px;
+  }
+  
+  .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-image: url(/Images/Selfie.jpeg) no-repeat;
+    background-color: transparent;
+    outline: none;
+    margin: 10px 125px 10px 5px;
+  }
+  
+  #dropdown-nav-menu {
+    position: relative;
+    display: inline-block;
+    color: #797a7e;
+  }
+  
+  .dropdown-nav-content {
+    color: #797a7e;
+  }
+  
+  #content-nav-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 12rem;
+    border-top: 1px solind #202428;
+    z-index: 1;
+    border-radius: 1.5%;
+    background-color: #eef0f1;
+    right: 130px;
+    top: 70px;
+  }
+  
+  #dropdown-nav-menu:hover #content-nav-dropdown {
+    display: block;
+    -webkit-box-shadow: 2px 3px 1px 2px 
+   #202428;
+            box-shadow: 2px 3px 1px 2px 
+   #202428;
+  } /* NavBar Web End*/
+
+  .hamburguer{ /*NavBar MOBILE INSERT*/
+    width: 35px;
+    height: 35px;
+    padding-right:10px;
+
+}
+
+.padding-nav-dev-mobile {
+    padding-left: 5%;
+    padding-right: 0;
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+   
+  }
+  
+  .logo-nav-mobile {
+    width: 30%;
+    height: 90%;
+    border: 1px solid black;
+    margin: 8px 10px 5px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #08090a;
+    color: #ffffff;
+    border-radius: 2.5px;
+    box-sizing: content-box;
+  }
+
+  .btn-nav-icon {
+    display: inline-block;
+    width: 1rem;
+  }
+  
+  .btn-nav-icon:hover {
+    /*outline-style: groove;*/
+    outline-color: #d2d6db;
+    background: #d2d6db;
+    border: 2px solid #d2d6db;
+    border-radius: 50%;
+  }
+  
+  #btn-connect {
+    background: url(/Images/Icon_Balloon.svg) no-repeat;
+    margin: 15px 15px 10px 35px;
+  }
+  
+  #btn-noti {
+    background: url(/Images/Icon_Bell.svg) no-repeat;
+    margin: 15px 15px 10px 5px;
+  }
+  
+  .avatar-mobile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-image: url(/Images/Selfie.jpeg) no-repeat;
+    background-color: transparent;
+    outline: none;
+    margin: 10px 0px 10px 120px;
+  }
+  
+  #dropdown-nav-menu {
+    position: relative;
+    display: inline-block;
+    color: #797a7e;
+  }
+  
+  .dropdown-nav-content {
+    color: #797a7e;
+  }
+  
+  #content-nav-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 22rem;
+    border-top: 1px solind #202428;
+    z-index: 1;
+    border-radius: 1.5%;
+    background-color: #eef0f1;
+    right: 4px;
+    top: 70px;
+  }
+  
+  #dropdown-nav-menu:hover #content-nav-dropdown {
+    display: block;
+    -webkit-box-shadow: 2px 3px 1px 2px 
+   #202428;
+            box-shadow: 2px 3px 1px 2px 
+   #202428;
+  }/*NavBar MOBILE END*/
+
+  .b-main { /*LEFT LIST BAR INSERT*/
+    border: none;
+    width: 100%;
+    background-color: #eef0f1;
+  }
+  
+  .header-Icons {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .header-Icon-reason {
+    display: inline-block;
+    margin-top: 25px;
+  }
+  
+  .pad-web-left {
+    padding-left: 210px;
+  }
+  
+  .pad-web-left-social {
+    padding-left: 230px;
+  }
+  
+  .pad-web-left-reason {
+    padding-left: 200px;
+  }
+  
+  .pad-web-left-shop {
+    padding-left: 170px;
+  }
+  
+  .icons-list-web a[href*="https://"] {
+    display: inline;
+    margin: 2.5px;
+    padding-top: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  a.btn#btn-h {
+    background: url(/Images/Icon_Home.svg) no-repeat;
+  }
+  
+  a.btn#btn-RL {
+    background: url(/Images/Icon_ReadingList.svg) no-repeat;
+  }
+  
+  a.btn#btn-L {
+    background: url(/Images/Icon_Lists.svg) no-repeat;
+  }
+  
+  a.btn#btn-Pod {
+    background: url(/Images/Icon_Podcasts.svg) no-repeat;
+  }
+  
+  a.btn#btn-Vid {
+    background: url(/Images/Icon_Videos.svg) no-repeat;
+  }
+  
+  a.btn#btn-Tags {
+    background: url(/Images/Icon_Tags.svg) no-repeat;
+  }
+  
+  a.btn#btn-CoC {
+    background: url(/Images/Icon_CodeOfConduct.svg) no-repeat;
+  }
+  
+  a.btn#btn-FAQ {
+    background: url(/Images/Icon_FAQ.svg) no-repeat;
+  }
+  
+  a.btn#btn-DevS {
+    background: url(/Images/Icon_DevShop.svg) no-repeat;
+  }
+  
+  a.btn#btn-Sponsors {
+    background: url(/Images/Icon_Sponsors.svg) no-repeat;
+  }
+  
+  a.btn#btn-About {
+    background: url(/Images/Icon_About.svg) no-repeat;
+  }
+  
+  a.btn#btn-PP {
+    background: url(/Images/Icon_PrivacyPolicy.svg) no-repeat;
+  }
+  
+  a.btn#btn-Terms {
+    background: url(/Images/Icon_TermsOfUse.svg) no-repeat;
+  }
+  
+  a.btn#btn-Cnt {
+    background: url(/Images/Icon_Comtact.svg) no-repeat;
+  }
+  
+  .social-box a[href*="https://"] {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+  }
+  
+  a.btn-social#Twitter {
+    background: url(/Images/Icon_twitter.svg) no-repeat;
+  }
+  
+  a.btn-social#Facebook {
+    background: url(/Images/Icon_Facebook.svg) no-repeat;
+  }
+  
+  a.btn-social#Github {
+    background: url(/Images/Icon_Cat.svg) no-repeat;
+  }
+  
+  a.btn-social#Insta {
+    background: url(/Images/Icon_Instagram.svg) no-repeat;
+  }
+  
+  a.btn-social#Insta {
+    background: url(/Images/Icon_Instagram.svg) no-repeat;
+  }
+  
+  a.btn-social#Twitch {
+    background: url(/Images/Icon_Twitch.svg) no-repeat;
+  }
+  
+  a.btn-social#Reason {
+    background: url(/Images/Icon_Reason.svg) no-repeat;
+    margin-right: 10px;
+    margin-left: 140px;
+    margin-top: 25px;
+  }
+  
+  .card-bg {
+    background-color: #eef0f1;
+    border: none;
+  }
+  
+  .btn-shop {
+    font-size: x-large;
+    color: #3b49df;
+    background-color: #eef0f1;
+  }
+  
+  .card-txt-align {
+    text-align: center;
+  }
+  
+  .card-txt-align:hover {
+    text-decoration: none;
+    color: orangered;
+  }/*LEFT LIST BAR END*/
+  
+.card-box { /*MAIN POST INSERT*/
+    width: 100%;
+}
+
+.avatar-post{
+    width: 4%;
+    border-radius: 50%;
+}
+
+.header-posts {
+    width: 100%;
+    height: 5%;
+    display:flex;
+    flex-direction: row;
+    padding: 1rem 0rem 1rem 40rem;
+    margin:0;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    box-sizing: border-box;
+    background-color: #eef0f1;
+    button{
+        width: 4rem;
+        height: 2rem;
+        margin: 0rem;
+        box-sizing: border-box;
+        border: none;
+        background-color:  #eef0f1;
+        outline: none;
+        cursor: pointer;
+        border-radius: 10%;
+      }
+    .text-post {
+        float: left;
+        margin: 0;
+        padding-right: 21rem;
+        color:#202428;
+        font-size: x-large;
+        border:none;
+      }
+  }
+
+  .post-btn:hover{
+    color: #3b49df;
+    background-color: #dcdfef;
+    border-bottom: 3px  solid #3b49df;
+  }
+
+ .post-btn:active{
+    border-bottom:3px  solid #3b49df;
+    transform: scale(1.2);
+  }
+
+.img-top {
+    width: 100%;
+    padding: 0;
+}
+
+.post-web-icon{
+    width: 5%;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.post-icon-text {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.post-icon-text-avatar {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+a.post-web-icon#post-heart {
+    background: url(/Images/Images/Icon_PostHeart.svg) no-repeat;
+}
+
+a.post-web-icon#post-comment {
+    background: url(/Images/Images/Icon_PostComment.svg) no-repeat;
+}
+
+.post-icon-text-right {
+    font-size: small;
+    display: inline-block;
+    margin-right: px;
+}
+
+
+.post-web-icon-right{
+    padding-left: 200px;
+    padding-top: 10px;
+}/*MAIN POST END*/
+
+
+
+
+

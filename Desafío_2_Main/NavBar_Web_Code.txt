@@ -1,0 +1,163 @@
+  <div class="row m-0 p-0 h-nav-bar"><!--MAIN ROW-->
+           
+            <div class="col-6"> <!--NAVBAR LEFT-->
+                <div class="row mt-1 mb-1 p-0 h-nav-bar"><!--ROW LEFT-LEFT-->
+
+                    <div class="col-3  m-0 padding-nav-dev-logo"> <!--DEV LOGO-->
+                        <div class="logo-nav dev">DEV</div>
+                    </div> <!--FIN DEV LOGO-->
+
+                    <div class="col-9 k m-0 p-0"> <!--SEARCH-->
+                        <nav class=" navbar-light pt-2 pb-2">
+                            <input class="search-nav-bar " type="search" placeholder="Search..." >
+                        </nav>
+                    </div><!--FIN SEARCH--> 
+
+                </div><!--ROW LEFT-LEFT-->
+            </div> <!--FIN NAVBAR LEFT--> 
+
+            <!--NAVBAR RIGHT-->
+            <div class="col-6  pt-2 pb-2 d-flex justify-content-end"> 
+                <a class="btn btn-primary btn-nav" href="https://dev.to/new" role="button">Write a post</a>
+                <a href="https://dev.to/connect" class="btn-nav-icon" id="btn-connect" alt="connect"></a>
+                <a href="https://dev.to/notifications" class="btn-nav-icon" id="btn-noti" alt="notifications"></a>
+
+                <div class="dropdwon" id="dropdown-nav-menu"> <!--DROPDOWN-->
+                    <input type="image" src="Images/Selfie.jpeg" class="avatar" aria-expanded="true" >
+                    <div class="dropdown-nav-content" id="content-nav-dropdown">
+                        <a  href="https://dev.to/javoadv">Javier Arredondo<br>@javoadv</a>
+                        <a href="https://dev.to/dashboard"><br>Dashboard</a>
+                        <a href="https://dev.to/new"><br>Write a Post</a>
+                        <a href="https://dev.to/readinglist"><br>Reading list</a>
+                        <a href="https://dev.to/settings"><br>Settings</a>
+                        <a href="https://dev.to/"><br>Sign out</a>
+                    </div>
+                </div><!--FIN  DROPDOWN-->
+            </div><!--FIN NAVBAR RIGHT-->
+
+        </div>
+
+.h-nav-bar {
+  height: 4rem;
+}
+
+.padding-nav-dev-logo {
+  padding-left: 15%;
+  padding-right: 0;
+}
+
+.logo-nav {
+  width: 65%;
+  height: 70%;
+  border: 1px solid black;
+  margin: 8px 10px 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #08090a;
+  color: #ffffff;
+  border-radius: 2.5px;
+}
+
+.search-nav-bar {
+  display: inline-block;
+  width: 70%;
+  height: 47px;
+  vertical-align: middle;
+  border: 1px solid #cad0d5;
+  border-radius: 3px;
+  background-color: #f9fafa;
+}
+
+.search-nav-bar:focus {
+  outline-style: none;
+  border: 1px solid #3b49df;
+  -webkit-box-shadow: 1px 2px #3b49df;
+          box-shadow: 1px 2px #3b49df;
+  background-color: #ffffff;
+}
+
+.btn-nav {
+  background-color: #3b49df;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16%;
+  height: 75%;
+  margin-top: 10px;
+}
+
+.btn-nav-icon {
+  display: inline-block;
+  width: 5%;
+}
+
+.btn-nav-icon :hover {
+  /*outline-style: groove;*/
+  outline-color: #d2d6db;
+  background: #d2d6db;
+  border: 2px solid #d2d6db;
+  border-radius: 50%;
+}
+
+#btn-connect {
+  background: url(/Images/Icon_Balloon.svg) no-repeat;
+  margin: 15px 15px 10px 35px;
+}
+
+#btn-noti {
+  background: url(/Images/Icon_Bell.svg) no-repeat;
+  margin: 15px 15px 10px 5px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url(/Images/Selfie.jpeg) no-repeat;
+  background-color: transparent;
+  outline: none;
+  margin: 10px 125px 10px 5px;
+}
+
+#dropdown-nav-menu {
+  position: relative;
+  display: inline-block;
+  color: #797a7e;
+}
+
+.dropdown-nav-content {
+  color: #797a7e;
+}
+
+#content-nav-dropdown {
+  display: none;
+  position: absolute;
+  min-width: 12rem;
+  border-top: 1px solind #202428;
+  z-index: 1;
+  border-radius: 1.5%;
+  background-color: #eef0f1;
+  right: 130px;
+  top: 70px;
+}
+
+#dropdown-nav-menu:hover #content-nav-dropdown {
+  display: block;
+  -webkit-box-shadow: 2px 3px 1px 2px 
+ #202428;
+          box-shadow: 2px 3px 1px 2px 
+ #202428;
+}

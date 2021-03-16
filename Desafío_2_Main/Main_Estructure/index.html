@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Práctica Uno</title>
+</head>
+<body>
+
+    <div class="row">
+        <!--Versión Web-->
+        <div class="d-none col-md-12 d-md-block m-0 border border-primary"><!--NavBar Web Insert-->
+            <div class="row m-0 p-0 h-nav-bar"><!--MAIN ROW-->
+           
+                <div class="col-6"> <!--NAVBAR LEFT-->
+                    <div class="row mt-1 mb-1 p-0 h-nav-bar"><!--ROW LEFT-LEFT-->
+    
+                        <div class="col-3  m-0 padding-nav-dev-logo"> <!--DEV LOGO-->
+                            <div class="logo-nav dev">DEV</div>
+                        </div> <!--FIN DEV LOGO-->
+    
+                        <div class="col-9 k m-0 p-0"> <!--SEARCH-->
+                            <nav class=" navbar-light pt-2 pb-2">
+                                <input class="search-nav-bar " type="search" placeholder="Search..." >
+                            </nav>
+                        </div><!--FIN SEARCH--> 
+    
+                    </div><!--ROW LEFT-LEFT-->
+                </div> <!--FIN NAVBAR LEFT--> 
+    
+                <!--NAVBAR RIGHT-->
+                <div class="col-6  pt-2 pb-2 d-flex justify-content-end"> 
+                    <a class="btn btn-primary btn-nav" href="https://dev.to/new" role="button">Write a post</a>
+                    <a href="https://dev.to/connect" class="btn-nav-icon" id="btn-connect" alt="connect"></a>
+                    <a href="https://dev.to/notifications" class="btn-nav-icon" id="btn-noti" alt="notifications"></a>
+    
+                    <div class="dropdwon" id="dropdown-nav-menu"> <!--DROPDOWN-->
+                        <input type="image" src="Images/Selfie.jpeg" class="avatar" aria-expanded="true" >
+                        <div class="dropdown-nav-content" id="content-nav-dropdown">
+                            <a  href="https://dev.to/javoadv">Javier Arredondo<br>@javoadv</a>
+                            <a href="https://dev.to/dashboard"><br>Dashboard</a>
+                            <a href="https://dev.to/new"><br>Write a Post</a>
+                            <a href="https://dev.to/readinglist"><br>Reading list</a>
+                            <a href="https://dev.to/settings"><br>Settings</a>
+                            <a href="https://dev.to/"><br>Sign out</a>
+                        </div>
+                    </div><!--FIN  DROPDOWN-->
+                </div><!--FIN NAVBAR RIGHT-->
+    
+            </div>
+
+        </div><!--NavBar Web End-->
+        <div class="d-none col-md-3 d-md-block border ml-md-5 m-lg-0 p-lg-0 border-danger"><!--LEFT LIST BAR INSERT-->
+            <div class="container b-main m-0"> <!--Inicio container-->
+                <div class="row"><!--Inicio Row-->
+                    <div class="col-lg-12  pt-4 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/" class="btn" id="btn-h"></a>
+                        <h6 class="header-Icons">Home</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/readinglist"  class="btn" id="btn-RL"></a>
+                        <h6 class="header-Icons">Reading List</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/listings"  class="btn" id="btn-L"></a>
+                        <h6 class="header-Icons">Listings</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/pod"  class="btn" id="btn-Pod"></a>
+                        <h6 class="header-Icons">Podcasts</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/videos"  class="btn" id="btn-Vid"></a>
+                        <h6 class="header-Icons">Videos</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/tags"  class="btn" id="btn-Tags"></a>
+                        <h6 class="header-Icons">Tags</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/code-of-conduct"  class="btn" id="btn-CoC"></a>
+                        <h6 class="header-Icons">Code of Conduct</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/faq"  class="btn" id="btn-FAQ"></a>
+                        <h6 class="header-Icons">FAQ</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://shop.dev.to/"  class="btn" id="btn-DevS"></a>
+                        <h6 class="header-Icons">Dev Shop</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/about"  class="btn" id="btn-Sponsors"></a>
+                        <h6 class="header-Icons">Sponsors</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/about"  class="btn" id="btn-About"></a>
+                        <h6 class="header-Icons">About</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="hhttps://dev.to/privacyt"  class="btn" id="btn-PP"></a>
+                        <h6 class="header-Icons">Privacy Policy</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/terms"  class="btn" id="btn-Terms"></a>
+                        <h6 class="header-Icons">Terms</h6>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 icons-list-web pad-web-left">
+                        <a href="https://dev.to/contact"  class="btn" id="btn-Cnt">t</a>
+                        <h6 class="header-Icons">Contact</h6>
+                    </div>
+                    <div class="col-lg-12  pt-5 pb-2 social-box pad-web-left-social">
+                        <a href="https://twitter.com/thepracticaldev"   class="btn-social" id="Twitter"></a>
+                        <a href="https://www.facebook.com/thepracticaldev"  class="btn-social" id="Facebook"></a>
+                        <a href="https://github.com/thepracticaldev" class="btn-social" id="Github"></a>
+                        <a href="https://www.instagram.com/thepracticaldev/" class="btn-social" id="Insta"></a>
+                        <a href="https://www.twitch.tv/thepracticaldev" class="btn-social" id="Twitch"></a>
+                    </div>
+                    <div class="col-lg-12  pt-2 pb-2 social-box pad-web-left-reason d-flex justify-content-center">
+                        <h6 class="header-Icon-reason">My Tags</h6>
+                        <a href="https://dev.to/dashboard/following_tags" class="btn-social" id="Reason"></a>
+                    </div>
+                    
+                    <div class="col-lg-12  pt-2 pb-2 pad-web-left-shop">
+        
+                        <div class="card card-bg" >
+                            <img src="Images/Images/Image_Shop.jpg" class="card-img-top" alt="Shop">
+                            <div class="card-body card-txt-align">
+                            <a href="https://shop.dev.to/products/sticker-pack-1" class="btn-shop">Get Your Stickers!</a>
+                            </div>
+                    </div>
+                    
+                    
+                </div> <!--Fin row-->
+            </div><!--Fin  container-->
+        </div>
+        </div><!--LEFT LIST BAR END-->
+        <div class="d-none col-md-5 d-md-block border m-md-0 m-lg-0 p-lg-0 border-danger bg-main"><!--MAIN POST INSERT-->
+            <div class="row p-0 m-0 card-box"> <!--Card Wraper-->
+                <div class="col-12 header-posts">
+                    <h1 class="text-post">Posts</h1>
+                            <button class="post-btn">Feed</button>
+                            <button class="post-btn">Week</button>
+                            <button class="post-btn">Month</button>
+                            <button class="post-btn">Year</button>
+                            <button class="post-btn">Infinity</button>
+                            <button class="post-btn">Latest</button>
+                </div>
+                <div class="col-12 p-0">
+                    <img src="Images/Images/Image_Main_Post.png" class="img-top" alt="PostS">
+                </div>
+                <div class="col-12 bg-white">
+                    <div class="row">
+                        <div class="col-12  d-flex align-items-center">
+                            <img src="Images/Images/Image_Sebastian.jpeg" class="avatar-post" alt="avatar">
+                            <p class="post-icon-text-avatar mt-3 mb-2 ml-3">Sebastian Rath<br>Mar 14 (1 day ago)</p>
+                        </div>
+                        <div class="col-12  pl-5">
+                            <h2 class="card-title ml-2">SnowFS ❄️ Let's bring version control to graphic projects</h2>
+                        </div>
+                        <div class="col-12  d-flex justify-content-around">
+                            <h7>#opensource</h7>
+                            <h7>#typescript</h7>
+                            <h7>#javascript</h7>
+                            <h7>#productivity</h7>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="row">
+                                <div class="col-6  pt-3 pb-3">
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8" class="post-web-icon " id="post-heart"></a>
+                                        <h6 class="post-icon-text">33 reactions</h6>
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8#comments" class="post-web-icon" id="post-comment"></a>
+                                    <h6 class="post-icon-text">3 comments</h6>
+        
+                                </div>
+                                <div class="col-6  post-web-icon-right">
+                                    <h6 class="post-icon-text-right">2 min read</h6>
+                                    <button type="button" class="btn btn-light post-web-icon-righ">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div><!--Fin Card Wraper-->
+
+        </div><!--MAIN POST END-->
+        </div>
+        <div class="d-none col-md-3 d-md-block border ml-md-0 border-danger">RIGHT</div> <!--FIn Versión Web-->
+
+        <!--Versión móvil-->
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-warning"><!--NAV BAR MOBILE Insert-->
+            <div class="row"> <!--Inicio Row-->
+                <!--DEV LOGO-->
+                <div class="col-6 border border-success d-flex align-items-center  padding-nav-dev-mobile"><!--Left mobile-->
+                    <input type="image" src="Images/Images/Icon_hamburguer.svg" class="hamburguer">
+                    <div class="logo-nav-mobile">DEV</div>
+                </div> <!--FIN DEV LOGO y FiN left mobile-->
+                
+                <div class="col-6 border border-danger"> <!--Inicio left mobile-->
+                    <!--a href="https://dev.to/connect" class="btn-nav-icon" id="btn-connect" alt="connect"></a-->
+                    
+        
+                        <div class="dropdwon" id="dropdown-nav-menu"> <!--DROPDOWN-->
+                            <input type="image" src="Images/Selfie.jpeg" class="avatar-mobile" >
+                            <div class="dropdown-nav-content" id="content-nav-dropdown">
+                                <a  href="https://dev.to/javoadv">Javier Arredondo<br>@javoadv</a>
+                                <a href="https://dev.to/dashboard"><br>Dashboard</a>
+                                <a href="https://dev.to/new"><br>Write a Post</a>
+                                <a href="https://dev.to/readinglist"><br>Reading list</a>
+                                <a href="https://dev.to/settings"><br>Settings</a>
+                                <a href="https://dev.to/"><br>Sign out</a>
+                            </div>
+                        </div><!--FIN  DROPDOWN-->
+                </div><!--Fin Lefto  mobile-->
+            </div>
+        
+        </div><!--NAV BAR MOBILE END--> 
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-secondary">TOP BAR MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
+        <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div> <!--Fin versión móvil-->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>

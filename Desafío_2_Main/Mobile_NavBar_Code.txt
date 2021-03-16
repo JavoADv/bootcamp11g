@@ -1,0 +1,122 @@
+    <div class="row"> <!--Inicio Row-->
+        <!--DEV LOGO-->
+        <div class="col-6 border border-success d-flex align-items-center  padding-nav-dev-mobile"><!--Left mobile-->
+            <input type="image" src="Images/Images/Icon_hamburguer.svg" class="hamburguer">
+            <div class="logo-nav-mobile">DEV</div>
+        </div> <!--FIN DEV LOGO y FiN left mobile-->
+        
+        <div class="col-6 border border-danger"> <!--Inicio left mobile-->
+            <!--a href="https://dev.to/connect" class="btn-nav-icon" id="btn-connect" alt="connect"></a-->
+            
+
+                <div class="dropdwon" id="dropdown-nav-menu"> <!--DROPDOWN-->
+                    <input type="image" src="Images/Selfie.jpeg" class="avatar-mobile" >
+                    <div class="dropdown-nav-content" id="content-nav-dropdown">
+                        <a  href="https://dev.to/javoadv">Javier Arredondo<br>@javoadv</a>
+                        <a href="https://dev.to/dashboard"><br>Dashboard</a>
+                        <a href="https://dev.to/new"><br>Write a Post</a>
+                        <a href="https://dev.to/readinglist"><br>Reading list</a>
+                        <a href="https://dev.to/settings"><br>Settings</a>
+                        <a href="https://dev.to/"><br>Sign out</a>
+                    </div>
+                </div><!--FIN  DROPDOWN-->
+        </div><!--Fin Lefto  mobile-->
+    </div>
+
+.hamburguer{
+    width: 35px;
+    height: 35px;
+    padding-right:10px;
+
+}
+
+.padding-nav-dev-mobile {
+    padding-left: 5%;
+    padding-right: 0;
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+   
+  }
+  
+  .logo-nav-mobile {
+    width: 30%;
+    height: 90%;
+    border: 1px solid black;
+    margin: 8px 10px 5px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #08090a;
+    color: #ffffff;
+    border-radius: 2.5px;
+    box-sizing: content-box;
+  }
+
+  .btn-nav-icon {
+    display: inline-block;
+    width: 1rem;
+  }
+  
+  .btn-nav-icon:hover {
+    /*outline-style: groove;*/
+    outline-color: #d2d6db;
+    background: #d2d6db;
+    border: 2px solid #d2d6db;
+    border-radius: 50%;
+  }
+  
+  #btn-connect {
+    background: url(/Images/Icon_Balloon.svg) no-repeat;
+    margin: 15px 15px 10px 35px;
+  }
+  
+  #btn-noti {
+    background: url(/Images/Icon_Bell.svg) no-repeat;
+    margin: 15px 15px 10px 5px;
+  }
+  
+  .avatar-mobile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-image: url(/Images/Selfie.jpeg) no-repeat;
+    background-color: transparent;
+    outline: none;
+    margin: 10px 0px 10px 120px;
+  }
+  
+  #dropdown-nav-menu {
+    position: relative;
+    display: inline-block;
+    color: #797a7e;
+  }
+  
+  .dropdown-nav-content {
+    color: #797a7e;
+  }
+  
+  #content-nav-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 22rem;
+    border-top: 1px solind #202428;
+    z-index: 1;
+    border-radius: 1.5%;
+    background-color: #eef0f1;
+    right: 4px;
+    top: 70px;
+  }
+  
+  #dropdown-nav-menu:hover #content-nav-dropdown {
+    display: block;
+    -webkit-box-shadow: 2px 3px 1px 2px 
+   #202428;
+            box-shadow: 2px 3px 1px 2px 
+   #202428;
+  }
