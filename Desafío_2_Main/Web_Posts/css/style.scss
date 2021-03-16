@@ -1,0 +1,34 @@
+.avatar-post{
+    width: 4%;
+    border-radius: 50%;
+}
+
+.post-icon-text {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.post-icon-text-avatar {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+a.post-web-icon#post-heart {
+    background: url(/Images/Images/Icon_PostHeart.svg) no-repeat;
+}
+
+a.post-web-icon#post-comment {
+    background: url(/Images/Images/Icon_PostComment.svg) no-repeat;
+}
+
+.post-icon-text-right {
+    font-size: small;
+    display: inline-block;
+    margin-right: px;
+}
+
+
+.post-web-icon-right{
+    padding-left: 260px;
+    padding-top: 10px;
+}
