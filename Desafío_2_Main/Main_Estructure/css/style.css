@@ -397,6 +397,16 @@ a.btn-social#Reason {
   border-radius: 50%;
 }
 
+.main-post-box {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 2px #f9fafa;
+          box-shadow: 1px 2px #f9fafa;
+  background-color: #f9fafa;
+}
+
 .header-posts {
   width: 100%;
   height: 5%;
@@ -497,4 +507,40 @@ a.post-web-icon#post-comment {
 }
 
 /*MAIN POST END*/
+.right-list {
+  /*RIGHT LIST INSERT*/
+  width: 435px;
+}
+
+.bg-main {
+  background-color: #eef0f1;
+}
+
+.right-list-colmn {
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 120px;
+}
+
+.head-right-image {
+  width: 100%;
+}
+
+.right-list-box {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 2px #f9fafa;
+          box-shadow: 1px 2px #f9fafa;
+  background-color: #f9fafa;
+}
+
+.right-list-content:hover {
+  color: #3e4adf;
+  background-color: #ffff;
+}
+
+/*RIGHT LIST INSERT END*/
 /*# sourceMappingURL=style.css.map */

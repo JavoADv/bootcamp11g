@@ -21,7 +21,7 @@
         <div class="col-lg-12  p-0 m-0">
             <div class="list-group"><!--Inicio Lista-->
                 <a href="https://dev.to/t/shecoded" class="list-group-item list-group-item-action pl-4 right-list-content">
-                  <b>Stories (122)</b>
+                  Stories (122)
                 </a>
                 <a href="https://dev.to/devteam/shecoded-2021-stories-from-women-building-software-and-the-allies-supporting-them-49pf" class="list-group-item list-group-item-action pl-4 right-list-content">SheCoded 2021 - Stories from  Women Building Software and the Allies Supporting Them</a>
                 <a href="https://dev.to/devcmombasa/nevertheless-she-coded-celine-surai-54d3" class="list-group-item list-group-item-action pl-4 right-list-content">Nevertheless, she coded: Celine Surai</a>
@@ -49,3 +49,25 @@
 
 </body>
 </html>
+
+
+.right-list {
+    width: 435px;
+}
+
+.head-right-image {
+   width: 100%;
+}
+
+.right-list-box {
+    width: fit-content;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    box-shadow: 1px 2px #f9fafa;
+    background-color: #f9fafa;
+}
+
+.right-list-content:hover {
+    color:#3e4adf;
+    background-color:#ffff ;
+}
