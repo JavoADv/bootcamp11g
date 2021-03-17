@@ -1,4 +1,4 @@
-* .col-12 {
+* .bg-fter {
   background-color: #d2d6db;
 }
 
@@ -84,7 +84,7 @@ a.btn-social-fter#Insta {
           mask-position: center;
 }
 
-a.btn-social#Twitch {
+a.btn-social-fter#Twitch {
   background-color: #64707d;
   -webkit-mask-image: url(/Images/Icon_Twitch.svg);
   -webkit-mask-repeat: no-repeat;
