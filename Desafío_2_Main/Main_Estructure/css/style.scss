@@ -2,24 +2,33 @@ $main-bg: #eef0f1;
 $white-bg:white;
 
 .bg-main{
-    background-color:$main-bg ;
+    background-color:$main-bg;
 }
 
 .bg-white {
     background-color:$white-bg;
 }
 
-.fx-nav-bar{
- /* position: fixed;
-  overflow: hidden;
-  z-index: 1;*/
-  border:1px solid $main-bg;
-}
-
 
 .h-nav-bar { /* NavBar Web Insert*/
     height: 4rem;
   }
+
+  .f-nav-bar{
+     position: fixed;  
+     overflow: hidden;
+     z-index: 1;
+     border:1px solid #bbbbbb;
+     background-color: white;
+     width: 100%;
+     top:0px;
+  }
+
+.nav-padding {
+  padding-top: 60px;
+  margin-left: 1rem;
+}
+   
   
   .padding-nav-dev-logo {
     padding-left: 15%;
@@ -76,7 +85,7 @@ $white-bg:white;
             align-items: center;
     width: 16%;
     height: 75%;
-    margin-top: 10px;
+    margin-top: 4px;
   }
   
   .btn-nav-icon {
@@ -84,7 +93,7 @@ $white-bg:white;
     width: 5%;
   }
   
-  .btn-nav-icon :hover {
+  .btn-nav-icon:hover {
     /*outline-style: groove;*/
     outline-color: #d2d6db;
     background: #d2d6db;
@@ -126,7 +135,7 @@ $white-bg:white;
     display: none;
     position: absolute;
     min-width: 12rem;
-    border-top: 1px solind #202428;
+    border-top: 1px solid #202428;
     z-index: 1;
     border-radius: 1.5%;
     background-color: #eef0f1;
@@ -179,7 +188,7 @@ $white-bg:white;
 
   .btn-nav-icon {
     display: inline-block;
-    width: 1rem;
+    width: 2rem;
   }
   
   .btn-nav-icon:hover {
@@ -224,7 +233,7 @@ $white-bg:white;
     display: none;
     position: absolute;
     min-width: 22rem;
-    border-top: 1px solind #202428;
+    border-top: 1px solid #202428;
     z-index: 1;
     border-radius: 1.5%;
     background-color: #eef0f1;
@@ -243,7 +252,9 @@ $white-bg:white;
   .b-main { /*LEFT LIST BAR INSERT*/
     border: none;
     width: 100%;
-    background-color: #eef0f1;
+    background-color:#eef0f1;
+    overflow: hidden;
+
   }
   
   .header-Icons {
@@ -399,7 +410,7 @@ $white-bg:white;
   
 .card-box { /*MAIN POST INSERT*/
     width: 100%;
-}
+  }
 
 .avatar-post{
     width: 4%;
@@ -491,7 +502,7 @@ a.post-web-icon#post-comment {
 .post-icon-text-right {
     font-size: small;
     display: inline-block;
-    margin-right: px;
+    margin-right: 10px;
 }
 
 
@@ -534,8 +545,8 @@ a.post-web-icon#post-comment {
 /*RIGHT LIST INSERT END*/
 
 .post-bdr-style{ /*POSTS INSERT*/
-  border:10px solid #e71313;
-  box-shadow: 1px 1px #bcdd27;
+  border:3px solid #11f7f7;
+  box-shadow: 1px 1px #f9fafa;
   border-radius: 8px;
 }
 
@@ -570,13 +581,13 @@ a.post-web-icon#post-comment {
 }
 
 .post-icon-text-right {
-  font-size: small;
+  font-size: x-small;
   display: inline-block;
-  margin-right: px;
+  margin-right: 0px;
 }
 
 
 .post-web-icon-right{
-  padding-left: 260px;
+  padding-left: 220px;
   padding-top: 10px;
-}/*END POSTS
+}/*END POSTS*/

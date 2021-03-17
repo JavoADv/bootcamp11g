@@ -11,6 +11,21 @@
   height: 4rem;
 }
 
+.f-nav-bar {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid #bbbbbb;
+  background-color: white;
+  width: 100%;
+  top: 0px;
+}
+
+.nav-padding {
+  padding-top: 60px;
+  margin-left: 1rem;
+}
+
 .padding-nav-dev-logo {
   padding-left: 15%;
   padding-right: 0;
@@ -66,7 +81,7 @@
   align-items: center;
   width: 16%;
   height: 75%;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .btn-nav-icon {
@@ -74,7 +89,7 @@
   width: 5%;
 }
 
-.btn-nav-icon :hover {
+.btn-nav-icon:hover {
   /*outline-style: groove;*/
   outline-color: #d2d6db;
   background: #d2d6db;
@@ -116,7 +131,7 @@
   display: none;
   position: absolute;
   min-width: 12rem;
-  border-top: 1px solind #202428;
+  border-top: 1px solid #202428;
   z-index: 1;
   border-radius: 1.5%;
   background-color: #eef0f1;
@@ -168,7 +183,7 @@
 
 .btn-nav-icon {
   display: inline-block;
-  width: 1rem;
+  width: 2rem;
 }
 
 .btn-nav-icon:hover {
@@ -213,7 +228,7 @@
   display: none;
   position: absolute;
   min-width: 22rem;
-  border-top: 1px solind #202428;
+  border-top: 1px solid #202428;
   z-index: 1;
   border-radius: 1.5%;
   background-color: #eef0f1;
@@ -233,6 +248,7 @@
   border: none;
   width: 100%;
   background-color: #eef0f1;
+  overflow: hidden;
 }
 
 .header-Icons {
@@ -498,7 +514,7 @@ a.post-web-icon#post-comment {
 .post-icon-text-right {
   font-size: small;
   display: inline-block;
-  margin-right: px;
+  margin-right: 10px;
 }
 
 .post-web-icon-right {
@@ -543,4 +559,54 @@ a.post-web-icon#post-comment {
 }
 
 /*RIGHT LIST INSERT END*/
+.post-bdr-style {
+  /*POSTS INSERT*/
+  border: 3px solid #11f7f7;
+  -webkit-box-shadow: 1px 1px #f9fafa;
+          box-shadow: 1px 1px #f9fafa;
+  border-radius: 8px;
+}
+
+.avatar-post {
+  width: 4%;
+  border-radius: 50%;
+}
+
+.post-web-icon {
+  width: 5%;
+  display: inline;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.post-icon-text {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.post-icon-text-avatar {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+a.post-web-icon#post-heart {
+  background: url(/Images/Icon_PostHeart.svg) no-repeat;
+}
+
+a.post-web-icon#post-comment {
+  background: url(/Images/Images/Icon_PostComment.svg) no-repeat;
+}
+
+.post-icon-text-right {
+  font-size: x-small;
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.post-web-icon-right {
+  padding-left: 220px;
+  padding-top: 10px;
+}
+
+/*END POSTS*/
 /*# sourceMappingURL=style.css.map */
