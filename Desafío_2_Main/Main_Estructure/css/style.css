@@ -13,7 +13,6 @@
 
 .f-nav-bar {
   position: fixed;
-  overflow: hidden;
   z-index: 1;
   border: 1px solid #bbbbbb;
   background-color: white;
@@ -230,9 +229,9 @@
   min-width: 22rem;
   border-top: 1px solid #202428;
   z-index: 1;
-  border-radius: 1.5%;
+  border-radius: 2.5px;
   background-color: #eef0f1;
-  right: 4px;
+  right: 130px;
   top: 70px;
 }
 
@@ -352,27 +351,48 @@ a.btn#btn-Cnt {
 }
 
 a.btn-social#Twitter {
-  background: url(/Images/Icon_twitter.svg) no-repeat;
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_twitter.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
 }
 
 a.btn-social#Facebook {
-  background: url(/Images/Icon_Facebook.svg) no-repeat;
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_Facebook.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
 }
 
 a.btn-social#Github {
-  background: url(/Images/Icon_Cat.svg) no-repeat;
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_Cat.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
 }
 
 a.btn-social#Insta {
-  background: url(/Images/Icon_Instagram.svg) no-repeat;
-}
-
-a.btn-social#Insta {
-  background: url(/Images/Icon_Instagram.svg) no-repeat;
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_Instagram.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
 }
 
 a.btn-social#Twitch {
-  background: url(/Images/Icon_Twitch.svg) no-repeat;
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_Twitch.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
 }
 
 a.btn-social#Reason {
