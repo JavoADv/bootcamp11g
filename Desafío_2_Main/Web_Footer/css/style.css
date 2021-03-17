@@ -1,0 +1,95 @@
+* .col-12 {
+  background-color: #d2d6db;
+}
+
+.fter-one {
+  display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 5px;
+  padding-left: 500px;
+}
+
+.mascot {
+  position: absolute;
+  float: right;
+  width: 54px;
+  height: 124px;
+  margin-left: 300px;
+  z-index: 1;
+}
+
+.fter-two {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 630px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fter-four {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 500px;
+}
+
+.fter-link {
+  color: black;
+}
+
+a.fter-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.social-box-fter a[href*="https://"] {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+
+a.btn-social-fter#Twitter {
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_twitter.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+a.btn-social-fter#Facebook {
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_Facebook.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+a.btn-social-fter#Github {
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_Cat.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+a.btn-social-fter#Insta {
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_Instagram.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+a.btn-social#Twitch {
+  background-color: #64707d;
+  -webkit-mask-image: url(/Images/Icon_Twitch.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+/*# sourceMappingURL=style.css.map */
