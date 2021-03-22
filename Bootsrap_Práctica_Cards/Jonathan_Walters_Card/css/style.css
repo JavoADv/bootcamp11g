@@ -4,10 +4,26 @@
   font-weight: 500,600;
 }
 
+.cont-attributes {
+  width: 90%;
+}
+
 .avatar {
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
+}
+
+.margin-smaller-card {
+  margin-top: 2rem;
+  margin-left: 0;
+  margin-right: 12px;
+  padding-right: 180px;
+  padding-left: 21px;
+}
+
+.padding-header {
+  padding-right: 96px;
 }
 
 .b-radius {
@@ -22,8 +38,8 @@
   position: absolute;
 }
 
-.bg-violet {
-  background-color: #7541c8;
+.bg-dark-blue {
+  background-color: #48556a;
 }
 
 .o-50 {

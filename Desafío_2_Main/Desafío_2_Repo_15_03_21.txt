@@ -8,32 +8,33 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Práctica Uno</title>
 </head>
-<body>
+<body class="bg-main nav-padding">
 
     <div class="row">
         <!--Versión Web-->
-        <div class="d-none col-md-12 d-md-block m-0 border border-primary"><!--NavBar Web Insert-->
+        <div class="d-none col-md-12 d-md-block m-0  f-nav-bar"><!--NavBar Web Insert-->
             <div class="row m-0 p-0 h-nav-bar"><!--MAIN ROW-->
            
                 <div class="col-6"> <!--NAVBAR LEFT-->
                     <div class="row mt-1 mb-1 p-0 h-nav-bar"><!--ROW LEFT-LEFT-->
     
                         <div class="col-3  m-0 padding-nav-dev-logo"> <!--DEV LOGO-->
-                            <div class="logo-nav dev">DEV</div>
+                            <div class="logo-nav dev"><b>DEV</b></div>
                         </div> <!--FIN DEV LOGO-->
     
-                        <div class="col-9 k m-0 p-0"> <!--SEARCH-->
+                        <div class="col-9  m-0 p-0"> <!--SEARCH-->
                             <nav class=" navbar-light pt-2 pb-2">
                                 <input class="search-nav-bar " type="search" placeholder="Search..." >
                             </nav>
                         </div><!--FIN SEARCH--> 
-    
+                    
                     </div><!--ROW LEFT-LEFT-->
                 </div> <!--FIN NAVBAR LEFT--> 
-    
+                
+            
                 <!--NAVBAR RIGHT-->
                 <div class="col-6  pt-2 pb-2 d-flex justify-content-end"> 
-                    <a class="btn btn-primary btn-nav" href="https://dev.to/new" role="button">Write a post</a>
+                    <a class="btn btn-primary btn-nav" href="https://dev.to/new" role="button"><b>Write a post</b></a>
                     <a href="https://dev.to/connect" class="btn-nav-icon" id="btn-connect" alt="connect"></a>
                     <a href="https://dev.to/notifications" class="btn-nav-icon" id="btn-noti" alt="notifications"></a>
     
@@ -48,12 +49,14 @@
                             <a href="https://dev.to/"><br>Sign out</a>
                         </div>
                     </div><!--FIN  DROPDOWN-->
+                    
                 </div><!--FIN NAVBAR RIGHT-->
     
             </div>
+        
 
         </div><!--NavBar Web End-->
-        <div class="d-none col-md-3 d-md-block border ml-md-5 m-lg-0 p-lg-0 border-danger"><!--LEFT LIST BAR INSERT-->
+        <div class="d-none col-md-3 d-md-block  ml-md-5 m-lg-0 p-lg-0 "><!--LEFT LIST BAR INSERT-->
             <div class="container b-main m-0"> <!--Inicio container-->
                 <div class="row"><!--Inicio Row-->
                     <div class="col-lg-12  pt-4 pb-2 icons-list-web pad-web-left">
@@ -138,7 +141,7 @@
             </div><!--Fin  container-->
         </div>
         </div><!--LEFT LIST BAR END-->
-        <div class="d-none col-md-5 d-md-block border m-md-0 m-lg-0 p-lg-0 border-danger bg-main"><!--MAIN POST INSERT-->
+        <div class="d-none col-md-5 d-md-block  m-md-0 m-lg-0 p-lg-0  bg-main"><!--MAIN POST INSERT-->
             <div class="row p-0 m-0 card-box"> <!--Card Wraper-->
                 <div class="col-12 header-posts">
                     <h1 class="text-post">Posts</h1>
@@ -149,7 +152,7 @@
                             <button class="post-btn">Infinity</button>
                             <button class="post-btn">Latest</button>
                 </div>
-                <div class="main-post-box"> <!--MAIN POST BOX -->
+                <div class="main-post-box bg-main"> <!--MAIN POST BOX -->
                 <div class="col-12 p-0">
                     <img src="Images/Images/Image_Main_Post.png" class="img-top" alt="PostS">
                 </div>
@@ -188,10 +191,148 @@
                     </div>
             </div><!--Fin Card Wraper-->
 
-        </div><!--MAIN POST END-->
-        </div>
+            <div class="row mr-0 ml-0 p-0"> <!--POSTS INSERT-->
+                <div class="col-12  mt-2 mr-0 mb-2 ml-0 post-bdr-style"> <!--NIGHTWOLF INSERT-->
+                    <div class="row">
+                        <div class="col-12  d-flex align-items-center">
+                            <img src="Images/Images/Image_NightWolf.png" class="avatar-post" alt="avatar">
+                            <p class="post-icon-text-avatar mt-3 mb-2 ml-3">nightwolfdev<br>Mar 15 (19 hours ago)</p>
+                        </div>
+                        <div class="col-12  pl-5">
+                            <h2 class="card-title ml-2">2 Ways To Dynamically Load Angular Components</h2>
+                        </div>
+                        <div class="col-12  d-flex justify-content-around">
+                            <h7>#angular</h7>
+                            <h7>#javascript</h7>
+                            <h7>#webdev</h7>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="row">
+                                <div class="col-6  pt-3 pb-3">
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8" class="post-web-icon " id="post-heart"></a>
+                                        <h6 class="post-icon-text">33 reactions</h6>
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8#comments" class="post-web-icon" id="post-comment"></a>
+                                    <h6 class="post-icon-text">3 comments</h6>
+        
+                                </div>
+                                <div class="col-6  post-web-icon-right">
+                                    <h6 class="post-icon-text-right">2 min read</h6>
+                                    <button type="button" class="btn btn-light post-web-icon-righ">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--END NIGTWOLF-->
+                
+                <div class="col-12  mb-2 post-bdr-style"> <!--INSERT YOGINI BENDE-->
+                    <div class="row">
+                        <div class="col-12  d-flex align-items-center">
+                            <img src="Images/Images/Image_Yogini Bende.jpeg" class="avatar-post" alt="avatar">
+                            <p class="post-icon-text-avatar mt-3 mb-2 ml-3">Yogini Bende<br>Mar 16 (10 hours ago)</p>
+                        </div>
+                        <div class="col-12  pl-5">
+                            <h2 class="card-title ml-2">Getting started with Tailwind and React: Implementing responsiveness.</h2>
+                        </div>
+                        <div class="col-12  d-flex justify-content-around">
+                            <h7>#tailwindcss</h7>
+                            <h7>#react</h7>
+                            <h7>#javascript</h7>
+                            <h7>#webdev</h7>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="row">
+                                <div class="col-6  pt-3 pb-3">
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8" class="post-web-icon " id="post-heart"></a>
+                                        <h6 class="post-icon-text">33 reactions</h6>
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8#comments" class="post-web-icon" id="post-comment"></a>
+                                    <h6 class="post-icon-text">3 comments</h6>
+        
+                                </div>
+                                <div class="col-6  post-web-icon-right">
+                                    <h6 class="post-icon-text-right">2 min read</h6>
+                                    <button type="button" class="btn btn-light post-web-icon-righ">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--END YOGINI BENDE-->
+                </div>
+                <div class="col-12  mb-2 post-bdr-style"> <!--INSERT LINDA-->
+                    <div class="row">
+                        <div class="col-12  d-flex align-items-center">
+                            <img src="Images/Images/Image_Linda.jpg" class="avatar-post" alt="avatar">
+                            <p class="post-icon-text-avatar mt-3 mb-2 ml-3">Yogini Bende<br>Mar 16 (7 hours ago)</p>
+                        </div>
+                        <div class="col-12  pl-5">
+                            <h2 class="card-title ml-2">Tips on Preparing a Great Developer Resume</h2>
+                        </div>
+                        <div class="col-12  d-flex justify-content-around">
+                            <h7>#beginners</h7>
+                            <h7>#career</h7>
+                            <h7>#siliconvalley</h7>
+                            <h7>#programming</h7>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="row">
+                                <div class="col-6  pt-3 pb-3">
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8" class="post-web-icon " id="post-heart"></a>
+                                        <h6 class="post-icon-text">33 reactions</h6>
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8#comments" class="post-web-icon" id="post-comment"></a>
+                                    <h6 class="post-icon-text">3 comments</h6>
+        
+                                </div>
+                                <div class="col-6  post-web-icon-right">
+                                    <h6 class="post-icon-text-right">2 min read</h6>
+                                    <button type="button" class="btn btn-light post-web-icon-righ">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--END LINDA-->
+                </div>
+                <div class="col-12  mb-2 post-bdr-style"> <!--INSERT ALEX-->
+                    <div class="row">
+                        <div class="col-12  d-flex align-items-center">
+                            <img src="Images/Images/Image_Alex.jpg" class="avatar-post" alt="avatar">
+                            <p class="post-icon-text-avatar mt-3 mb-2 ml-3">Alex<br>Mar 16 (2 hours ago)</p>
+                        </div>
+                        <div class="col-12  pl-5">
+                            <h2 class="card-title ml-2">Better Tests for Text Content with React Testing Library</h2>
+                        </div>
+                        <div class="col-12  d-flex justify-content-around">
+                            <h7>#react</h7>
+                            <h7>#testing</h7>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="row">
+                                <div class="col-6  pt-3 pb-3">
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8" class="post-web-icon " id="post-heart"></a>
+                                        <h6 class="post-icon-text">33 reactions</h6>
+        
+                                    <a href="https://dev.to/sebmtl/snowfs-let-s-bring-version-control-to-graphic-projects-10p8#comments" class="post-web-icon" id="post-comment"></a>
+                                    <h6 class="post-icon-text">3 comments</h6>
+        
+                                </div>
+                                <div class="col-6  post-web-icon-right">
+                                    <h6 class="post-icon-text-right">2 min read</h6>
+                                    <button type="button" class="btn btn-light post-web-icon-righ">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--INSERT ALEX-->
+                
+            </div> <!--END POSTS INSERT-->
         </div><!--MAIN POST BOX END-->
-        <div class="d-none col-md-4 d-md-block border ml-md-0 border-danger right-list-colmn .bg-main"> <!--Right LIST INSERT-->
+
+        <div class="d-none col-md-4 d-md-block ml-md-0  right-list-colmn bg-main"> <!--Right LIST INSERT-->
             <div class=" container right-list-box"> <!--Inicio BOX-->
                 <div class="row right-list"> <!--RIGHT LIST INCIO-->
                     <div class="col-lg-12 p-0 m-0">
@@ -226,18 +367,82 @@
                 </div>
                 
                 </div><!--FIN BOX--> <!--FIN RIGHT INSERT -->
-        </div> <!--FIn Versión Web-->
+         </div> <!--FIn Versión Web-->
+        
+         <div class="col-lg-12 mg-0 p-0 fter-box"><!--FOOTER INSERT-->
+            <div class="row">
+                <div class="col-12 d-inline-flex bg-fter p-0 m-0 ">
+                    <div class="col-9 d-inline-flex justify-content-around primary fter-one">
+                        <h6>Home</h6>
+                        <h6>Reading List</h6>
+                        <h6>Listings</h6>
+                        <h6>Podcasts</h6>
+                        <h6>Videos</h6>
+                        <h6>Tags</h6>
+                        <h6>Code of Conduct</h6>
+                        <h6>FAQ</h6>
+                        <h6>DEV Shop</h4>
+                    </div>
+                    <div class="col-3 info">
+                        <img class="mascot"src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png" alt="Mascot">
+                    </div>
+                </div>
+                <div class="col-12 d-inline-flex bg-fter fter-two">
+                    <h6 class="mr-4">Sponsors</h6>
+                    <h6 class="mr-4">About</h6>
+                    <h6 class="mr-4">Privacy Policy</h6>
+                    <h6 class="mr-4">Terms of Use</h6>
+                    <h6 class="mr-4">Contact</h6>
+                    <h6 class="mr-4"><b>Write a Post</b></h6>
+        
+                </div>
+                <div class="col-12 social-box-fter d-flex justify-content-center bg-fter pt-3 pb-3">
+                    <a href="https://twitter.com/thepracticaldev"   class="btn-social-fter" id="Twitter"></a>
+                    <a href="https://www.facebook.com/thepracticaldev"  class="btn-social-fter" id="Facebook"></a>
+                    <a href="https://github.com/thepracticaldev" class="btn-social-fter" id="Github"></a>
+                    <a href="https://www.instagram.com/thepracticaldev/" class="btn-social-fter" id="Insta"></a>
+                    <a href="https://www.twitch.tv/thepracticaldev" class="btn-social" id="Twitch"></a> 
+                </div>
+                <div class="col-12 d-inline-flex fter-four bg-fter">  
+                    <h6><b>DEV Community</b></h6>
+                    <p> – A constructive and inclusive social network for software developers. With you every step of your journey.</p>
+                </div>
+                <div class="col-12 d-inline-flex justify-content-center warning bg-fter">
+                    <p class="mr-1">Built on </p>
+                    <a href="https://www.forem.com" class="mr-1 fter-link"><b>Forem</b></a>
+                    <p class="mr-1">- the </p>
+                    <a href="https://dev.to/t/opensource"class="mr-1 fter-link"><b>open source</b></a>
+                    <p class="mr-1">software that powers </p>
+                    <a href="https://dev.to" class="mr-1 fter-link"><b>DEV</b></a>
+                    <p>and other inclusive communities.</p>
+                    
+                </div>
+                <div class="col-12 d-inline-flex justify-content-center fter-six bg-fter">
+                    <p>Made with love and</p>
+                    <a href="https://dev.to" class="ml-1 mr-1 fter-link"><b>Ruby on Rails</b>.</a>
+                    <p>DEV Community <span title="copyright">©</span>2016 - 2021.</p>
+                </div>
+                <div class="col-12 d-inline-flex justify-content-center pb-5 bg-fter">
+                    <img src="Images/Icon_Leaves.svg">
+                </div>
+            </div> 
+        
+        </div><!--FOOTER INSERT-->
+       
+
+               
+        
 
         <!--Versión móvil-->
-        <div class="row col-12 d-md-none d-lg-none m-0 border border-warning"><!--NAV BAR MOBILE Insert-->
+        <div class="row col-12 d-md-none d-lg-none m-0"><!--NAV BAR MOBILE Insert-->
             <div class="row"> <!--Inicio Row-->
                 <!--DEV LOGO-->
-                <div class="col-6 border border-success d-flex align-items-center  padding-nav-dev-mobile"><!--Left mobile-->
+                <div class="col-6 d-flex align-items-center  padding-nav-dev-mobile"><!--Left mobile-->
                     <input type="image" src="Images/Images/Icon_hamburguer.svg" class="hamburguer">
                     <div class="logo-nav-mobile">DEV</div>
                 </div> <!--FIN DEV LOGO y FiN left mobile-->
                 
-                <div class="col-6 border border-danger"> <!--Inicio left mobile-->
+                <div class="col-6 "> <!--Inicio left mobile-->
                     <!--a href="https://dev.to/connect" class="btn-nav-icon" id="btn-connect" alt="connect"></a-->
                     
         
@@ -253,8 +458,11 @@
                             </div>
                         </div><!--FIN  DROPDOWN-->
                 </div><!--Fin Lefto  mobile-->
-            </div>
-        
+             </div>
+
+       
+            
+       
         </div><!--NAV BAR MOBILE END--> 
         <div class="row col-12 d-md-none d-lg-none m-0 border border-secondary">TOP BAR MOBILE</div>
         <div class="row col-12 d-md-none d-lg-none m-0 border border-success">POSTS MOBILE</div>
@@ -278,16 +486,32 @@ $main-bg: #eef0f1;
 $white-bg:white;
 
 .bg-main{
-    background-color:$main-bg ;
+    background-color:$main-bg;
 }
 
 .bg-white {
     background-color:$white-bg;
 }
 
+
 .h-nav-bar { /* NavBar Web Insert*/
     height: 4rem;
   }
+
+  .f-nav-bar{
+     position: fixed;  
+     z-index: 1;
+     border:1px solid #bbbbbb;
+     background-color: white;
+     width: 100%;
+     top:0px;
+  }
+
+.nav-padding {
+  padding-top: 60px;
+  margin-left: 1rem;
+}
+   
   
   .padding-nav-dev-logo {
     padding-left: 15%;
@@ -344,7 +568,7 @@ $white-bg:white;
             align-items: center;
     width: 16%;
     height: 75%;
-    margin-top: 10px;
+    margin-top: 4px;
   }
   
   .btn-nav-icon {
@@ -352,7 +576,7 @@ $white-bg:white;
     width: 5%;
   }
   
-  .btn-nav-icon :hover {
+  .btn-nav-icon:hover {
     /*outline-style: groove;*/
     outline-color: #d2d6db;
     background: #d2d6db;
@@ -394,7 +618,7 @@ $white-bg:white;
     display: none;
     position: absolute;
     min-width: 12rem;
-    border-top: 1px solind #202428;
+    border-top: 1px solid #202428;
     z-index: 1;
     border-radius: 1.5%;
     background-color: #eef0f1;
@@ -447,7 +671,7 @@ $white-bg:white;
 
   .btn-nav-icon {
     display: inline-block;
-    width: 1rem;
+    width: 2rem;
   }
   
   .btn-nav-icon:hover {
@@ -492,12 +716,13 @@ $white-bg:white;
     display: none;
     position: absolute;
     min-width: 22rem;
-    border-top: 1px solind #202428;
+    border-top: 1px solid #202428;
     z-index: 1;
-    border-radius: 1.5%;
+    border-radius: 2.5px;
     background-color: #eef0f1;
-    right: 4px;
+    right: 130px;
     top: 70px;
+    
   }
   
   #dropdown-nav-menu:hover #content-nav-dropdown {
@@ -511,7 +736,9 @@ $white-bg:white;
   .b-main { /*LEFT LIST BAR INSERT*/
     border: none;
     width: 100%;
-    background-color: #eef0f1;
+    background-color:#eef0f1;
+    overflow: hidden;
+
   }
   
   .header-Icons {
@@ -615,27 +842,39 @@ $white-bg:white;
   }
   
   a.btn-social#Twitter {
-    background: url(/Images/Icon_twitter.svg) no-repeat;
+    background-color:#64707d;
+    -webkit-mask-image: url(/Images/Icon_twitter.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    
   }
   
   a.btn-social#Facebook {
-    background: url(/Images/Icon_Facebook.svg) no-repeat;
+    background-color:#64707d;
+    -webkit-mask-image: url(/Images/Icon_Facebook.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
   }
   
   a.btn-social#Github {
-    background: url(/Images/Icon_Cat.svg) no-repeat;
+    background-color:#64707d;
+    -webkit-mask-image: url(/Images/Icon_Cat.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
   }
   
   a.btn-social#Insta {
-    background: url(/Images/Icon_Instagram.svg) no-repeat;
-  }
-  
-  a.btn-social#Insta {
-    background: url(/Images/Icon_Instagram.svg) no-repeat;
+    background-color:#64707d;
+    -webkit-mask-image: url(/Images/Icon_Instagram.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
   }
   
   a.btn-social#Twitch {
-    background: url(/Images/Icon_Twitch.svg) no-repeat;
+    background-color:#64707d;
+    -webkit-mask-image: url(/Images/Icon_Twitch.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
   }
   
   a.btn-social#Reason {
@@ -667,7 +906,7 @@ $white-bg:white;
   
 .card-box { /*MAIN POST INSERT*/
     width: 100%;
-}
+  }
 
 .avatar-post{
     width: 4%;
@@ -759,7 +998,7 @@ a.post-web-icon#post-comment {
 .post-icon-text-right {
     font-size: small;
     display: inline-block;
-    margin-right: px;
+    margin-right: 10px;
 }
 
 
@@ -800,6 +1039,147 @@ a.post-web-icon#post-comment {
   background-color:#ffff ;
 }
 /*RIGHT LIST INSERT END*/
+
+.post-bdr-style{ /*POSTS INSERT*/
+  border:1px solid #e9ebeb;
+  box-shadow: 1px 2px #e9ebeb;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.avatar-post{
+  width: 4%;
+  border-radius: 50%;
+}
+
+.post-web-icon{
+  width: 5%;
+  display: inline;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.post-icon-text {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.post-icon-text-avatar {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+a.post-web-icon#post-heart {
+  background: url(/Images/Icon_PostHeart.svg) no-repeat;
+}
+
+a.post-web-icon#post-comment {
+  background: url(/Images/Images/Icon_PostComment.svg) no-repeat;
+}
+
+.post-icon-text-right {
+  font-size: x-small;
+  display: inline-block;
+  margin-right: 0px;
+}
+
+
+.post-web-icon-right{
+  padding-left: 220px;
+  padding-top: 10px;
+}/*END POSTS*/
+
+/*FOOTER BOX*/
+
+.fter-box {
+  width: 50%;
+}
+
+* .bg-fter{
+  background-color: #d2d6db;
+}
+.fter-one{
+  display:inline-block;
+  padding-top: 60px;
+  padding-bottom: 5px;
+  padding-left: 500px;
+  
+}   
+
+.mascot{
+  position:absolute;
+  float:right;
+  width: 54px;
+  height: 124px;
+  margin-left: 300px;
+  z-index: 1;
+}
+
+.fter-two {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 630px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fter-four {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 500px;
+}
+
+.fter-link {
+  color: black;
+}
+
+a.fter-link:hover{
+      color: black;
+      text-decoration: none;
+}
+
+.social-box-fter a[href*="https://"] {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+
+a.btn-social-fter#Twitter {
+  background-color:#64707d;
+  -webkit-mask-image: url(/Images/Icon_twitter.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+   }
+
+a.btn-social-fter#Facebook {
+  background-color:#64707d;
+  -webkit-mask-image: url(/Images/Icon_Facebook.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+a.btn-social-fter#Github {
+  background-color:#64707d;
+  -webkit-mask-image: url(/Images/Icon_Cat.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+a.btn-social-fter#Insta {
+  background-color:#64707d;
+  -webkit-mask-image: url(/Images/Icon_Instagram.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+a.btn-social-fter#Twitch {
+  background-color:#64707d;
+  -webkit-mask-image: url(/Images/Icon_Twitch.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
 
 
 

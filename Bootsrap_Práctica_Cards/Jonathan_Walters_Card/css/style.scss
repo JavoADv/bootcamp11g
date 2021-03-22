@@ -1,0 +1,52 @@
+* {
+    font-size: 13px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500,600;
+}
+
+.cont-attributes {
+    width: 90%;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.margin-smaller-card {
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 12px;
+    padding-right: 180px;
+    padding-left: 21px;
+    
+}
+
+.padding-header {
+    padding-right: 96px;
+}
+
+.b-radius {
+    border-radius: 5px;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.bg-dark-blue {
+    background-color:hsl(217, 19%, 35%);
+}
+
+.o-50{
+    opacity: 50%;
+}
+
+.o-70 {
+    opacity: 70%;
+}
