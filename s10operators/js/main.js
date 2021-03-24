@@ -1,4 +1,39 @@
-/* índice de masa coporal IMC= peso/altura*/
+
+var country = prompt ("Ingresa tu país:");
+var height = parseFloat (prompt("Ingresa tu estatura en centímetros: "));
+var gender = prompt ("Ingresa tu género");
+var averageHeight ;
+
+switch (country) {
+    case "Mexico":
+        averageHeight = gender === "masculino" 
+                                ? 170
+                                : 160.8
+        if (height < averageHeight) {
+            alert ("tu estatura es menor al promedio")
+        } else if(height > averageHeight) {
+            alert ("Tu altura es menor al promedio")
+
+        } else {
+            alert ("Tu altura es promedio")
+        }
+         break; 
+
+         default:
+             alert ("País no definido")
+
+}
+
+
+
+
+
+
+
+
+
+
+/* índice de masa coporal IMC= peso/altura
 
 var peso = peso ;
 var altura = altura;
@@ -12,8 +47,6 @@ var altura = prompt ("Ingresa tu altura");
 
 peso = parseInt (peso);
 altura = parseFloat (altura);
-/*var altura2 = (altura * 100);
-IMC = (peso/altura2);*/
 
 IMC = (peso/(altura * altura));
 
@@ -21,21 +54,31 @@ alert ("Tu IMC es: " +IMC);
 
 if (IMC <= 18.5) {
     alert ("Peso inferior al normal");
-}
-
-if (IMC >= 18.5 && IMC <= 24.9) {
+} else if (IMC >= 18.5 && IMC <= 24.9) {
     alert ("Tu peso es normal");
-}
-
-if (IMC >= 25.0 && IMC <= 29.9) {
+}else if (IMC >= 25.0 && IMC <= 29.9) {
     alert ("Tu peso es superior al normal");
-}
-
-if (IMC >= 30.0 ) {
+}else if (IMC >= 30.0 ) {
     alert ( "¡Muévete!");
 } else {
     alert ("Valor no definido");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Altura dependiendo del país y género
 
