@@ -26,7 +26,7 @@
 */
 
 
-var koders = []
+/*var koders = []
 
 function koderSave () {
 
@@ -55,6 +55,59 @@ function koderAdd () {
 function koderDelete () {
     let randomKoder = Math.floor (Math.random() * koders.length)
     let randomDelete = koders.splice (randomKoder, 1)
-    console.log (koders) }
+    console.log (koders) }*/
+
+    var kodersList = [
+    [
+        "Fernanda",
+        "Palacios Vera"
+    ],
+    [
+        "Jorge",
+        "Ochoa"
+    ],
+    [
+        "Naomi",
+        "Puertos"
+    ],
+    [
+        "Rurick",
+        "Maqueo Poissot"
+    ]
+]
+
+const createNewArray = () => {
+  let newArray = []
+  for( i = 0; i < kodersList.length; i++){
+    newArray.push( kodersList[i].join(" "))
+  }
+  return newArray
+}
+
+var joinedNames = createNewArray()
+
+console.log( joinedNames )
 
 
+
+/*
+    -crear un nuevo array que contenga los nombres completos de todos los koders de kodersList
+*/
+/*
+  Ingresar un nombre
+  validar si existe algún koder cuyo primer nombre coincida con el nombre escrito
+*/
+
+
+
+function compareName () {
+    var koderName = prompt ("Ingresa un nombre: ")
+    let Name
+    for ( i = 0; i < joinedNames.length; i++) {
+        return Name
+        let NameCompairing
+        Namecompairing = koderName.localcompare(Name)
+
+    }
+
+}
