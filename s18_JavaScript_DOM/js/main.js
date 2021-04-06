@@ -1,7 +1,7 @@
 /*let namesArray = [
     "Juan",
-    "Berta",
-    "Imbécil"
+    "Berta"
+    
 ]
 
 const printList = () => {
