@@ -110,7 +110,7 @@ const printComments = data => {
 
         let {name}=data[key]
 
-    $(".reply-section").append(`<li class="list-group-item"><div class ="reply-box><h3><img src="" alt=""><span>Nuevo comment</span><p class="reply-header">Post Header</p><p class="reply-body">${name}</p><p>${date}</p></li>`)
+    $(".reply-section").append(`<li class="list-group-item bg-light"><div class ="reply-box><h3><img src="" alt=""><span class="text-primary">Nuevo comment</span><p class="reply-header text-primary">Post Header</p><p class="reply-body text-primary">${name}</p><p>${date}</p></li>`)
 
     }
 
