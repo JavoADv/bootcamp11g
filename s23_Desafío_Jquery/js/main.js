@@ -15,8 +15,8 @@ let replies = {
         userId:1, /*id del usuario que comenta*/
         post:1, /*id del post en el que se comenta*/
         content:"Excelente post!", /*contenido del comentario */
-        //creationDate:"14/04/2021", /*fecha de creación del comentario */
-        //creationTime:"19:00", /*hora de creación del comentario */
+        creationDate:"14/04/2021", /*fecha de creación del comentario */
+        creationTime:"19:00", /*hora de creación del comentario */
     }
 }
 
@@ -98,8 +98,10 @@ const getData = () => {
     return dataImported
 }   
 
-let date = moment().format("DD/MM/YYYY")
+let date = moment().format("DD/MM/YYYY, h:mm:ss a")
 console.log (date)
+
+
 
 const printComments = data => {
 
@@ -110,11 +112,10 @@ const printComments = data => {
 
         let {name}=data[key]
 
-    $(".reply-section").append(`<li class="list-group-item"><div class ="reply-box><h3><img src="" alt=""><span>Nuevo comment</span><p class="reply-header">Post Header</p><p class="reply-body">${name}</p><p>${date}</p></li>`)
+  
+   $(".reply-section").append(`<li class="list-group-item"><div class ="reply-box><h3><img src="" alt=""><span>Nuevo comment</span><p class="reply-header">Post Header</p><p class="reply-body">${name}</p><p>${date}</p></li>`)
 
     }
-
-    
 
 }
 
