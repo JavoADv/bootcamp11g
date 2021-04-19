@@ -1,0 +1,17 @@
+#square {
+    width: 250px;
+    height: 250px;
+   
+}
+
+#rectangle {
+    width: 400px;
+    height: 250px;
+
+}
+
+#circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}

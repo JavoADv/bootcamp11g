@@ -15,8 +15,8 @@ let replies = {
         userId:1, /*id del usuario que comenta*/
         post:1, /*id del post en el que se comenta*/
         content:"Excelente post!", /*contenido del comentario */
-        creationDate:"14/04/2021", /*fecha de creación del comentario */
-        creationTime:"19:00", /*hora de creación del comentario */
+        //creationDate:"14/04/2021", /*fecha de creación del comentario */
+        //creationTime:"19:00", /*hora de creación del comentario */
     }
 }
 
@@ -33,46 +33,33 @@ let users = {
     }
 } 
 
-/*let getText = () => {
-   let replyText =  $(".form-control").val()
-   console.log (replyText)
-   //return replyText
-   $(".reply-body").append(replyText)
-}
-
-$(".arrow-btn").click (()=>{
-    event.preventDefault()
-    console.log ("click")
-    
-    $(".reply-section").append('<li class="list-group-item"><div class ="reply-box><h3><img src="" alt=""><span>Nuevo comment</span><p class="reply-header">Post Header</p><p class="reply-body"></p></li>')
-    
-    getText()
-})*/
-
-let getText = () => {
-    let replytext = $('.form-control').val()
-    let someObject = {}
-    someObject.name = replytext
-    saveData (someObject)
-    replytext.value = ""
+// Sección "comments"
+let getCommentsText = () => {
+    let replyText = $('#comments-input').val()
+    console.log (replyText)
+    let newComment = {}
+    newComment.name = replyText
+    console.log (newComment)
+    saveCommentsData (newComment)
+    replyText.value = ""
 }
 
 
-$(".arrow-btn").click (()=>{
+$("#post-comment").click (()=>{
     event.preventDefault()
     console.log ("click")
-    getText()
+    getCommentsText()
 })
    
 
-const saveData = comment => {
+const saveCommentsData = comment => {
     $.ajax({
         method: "POST",
-        url: "https://ajaxclass-1ca34.firebaseio.com/11g/DesafioTeam3/.json",
+        url: "https://ajaxclass-1ca34.firebaseio.com/11g/DesafioTeam3/comments/.json",
         data: JSON.stringify(comment),
         success : response => {
             console.log(response)
-            printComments (getData())
+            printComments (getCommentsData())
         },
         error : error => {
             console.log(error)
@@ -80,15 +67,14 @@ const saveData = comment => {
     })
 }
 
-const getData = () => {
+const getCommentsData = () => {
     let dataImported;
     $.ajax({
         method: "GET",
-        url: "https://ajaxclass-1ca34.firebaseio.com/11g/DesafioTeam3/.json",
+        url: "https://ajaxclass-1ca34.firebaseio.com/11g/DesafioTeam3/comments/.json",
         success: response => {
-            //console.log(response)
-            dataImported = response
-            //console.log (dataImported)
+             dataImported = response
+            
         },
         error: error => {
             console.log(error)
@@ -106,23 +92,29 @@ console.log (date)
 const printComments = data => {
 
    
-    $(".reply-section").empty()
+    $(".replyWrapper").empty()
 
     for (key in data) {
 
         let {name}=data[key]
 
   
-   $(".reply-section").append(`<li class="list-group-item"><div class ="reply-box><h3><img src="" alt=""><span>Nuevo comment</span><p class="reply-header">Post Header</p><p class="reply-body">${name}</p><p>${date}</p></li>`)
+   let comment = (`<li class="list-group-item"><div class ="reply-box><h3><img src="" alt=""><span>Nuevo comment</span><p class="reply-header">Post Header</p><p class="reply-body">${name}</p><p>${date}</p></li>`)
+
+   $(".repliesWrapper").each (function () {
+       if (this.dataset.postId == postId) {
+           $(this).append(comment);
+       }
+   })
 
     }
 
 }
 
-const deleteData = () => {
+/*const deleteData = () => {
     $.ajax({
         method:"DELETE",
-        url: "https://ajaxclass-1ca34.firebaseio.com/11g/DesafioTeam3/.json",
+        url: "https://ajaxclass-1ca34.firebaseio.com/11g/DesafioTeam3/comments/.json",
         success: response => {
             console.log( response)
         },
@@ -132,5 +124,177 @@ const deleteData = () => {
     })
 }
 
-deleteData()
+deleteData()*/
+
+
+
+
+//Sección Posts
+let newPost = {}
+
+let getPostsText = () => {
+    let postText = document.querySelectorAll("form input[type='text']")
+    
+    postText.forEach(field => {
+        newPost[field.name] = field.value
+    })
+
+    //console.log(someObject)
+    savePostsData (newPost)
+
+    postText.forEach(field => {
+        field.value = ""
+    })
+}
+
+let postId = Date.now ()
+
+newPost = {
+    ...newPost,
+    date: moment().format("DD/MMMM/YYYY"),
+    id: postId,
+
+}
+
+// se arega el listener
+$("#save-post").click ((event)=>{
+    event.preventDefault()
+    getPostsText()
+})
+   
+
+const savePostsData = comment => {
+    $.ajax({
+        method: "POST",
+        url: "https://ajaxclass-1ca34.firebaseio.com/11g/DesafioTeam3/Posts/.json",
+        data: JSON.stringify(comment),
+        success : response => {
+            console.log(response)
+            printPosts (getPostsData())
+            
+            
+        },
+        error : error => {
+            console.log(error)
+        }
+    })
+}
+
+const getPostsData = () => {
+    let dataImported;
+    $.ajax({
+        method: "GET",
+        url: "https://ajaxclass-1ca34.firebaseio.com/11g/DesafioTeam3/Posts/.json",
+        success: response => {
+            dataImported = response
+            console.log (dataImported)
+        },
+        error: error => {
+            console.log(error)
+        },
+        async: false
+    }) 
+    return dataImported
+}   
+
+const innerButton =()=> $(".inner-arrow").click ((event)=>{
+    event.preventDefault()
+    console.log ("click")
+    getPostsText()
+   
+})
+
+
+// funcion para pintar la tabla
+const printPosts = data => {
+
+    $("#reply-section").empty()
+
+    for (key in data) {
+
+        let {name, postText, url}=data[key]
+
+
+    $("#post-section").prepend(`
+        <div id="reply-section">
+            <div class="container ">
+                <div class="row border p-3">
+                    <div class="col-2">
+                        <div style="height: 1rem, widht: 2rem" >
+                        <img style="object-fit: contain" class="w-100  d-inline-block border" src=${url}  alt="">
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <h3>${name} </h3>
+                        <p>${postText}</p>
+                        <button data-data-key=${key} id="delete-comment" class="btn btn-outline-danger mt-3"  type="submit">DELETE</button>
+                    </div>
+                </div>
+                <div class="row border p-3">
+                <div class="col-9 ">
+                    <form>
+                        <div class="form-group">
+                        <label for="exampleInputEmail1">Publica un comment!</label>
+                        <input type="email" class="form-control" id="#comments-input" aria-describedby="emailHelp">
+                        
+                        </div>
+                    </form>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    
+                    <button id="post-comment" class="btn btn-outline-success mt-3"  type="submit">COMMENT</button>
+                </div>
+                </div>
+                
+                <div data-post-id=${postId} class="replies-wrapper">
+
+            </div>
+        </div>`)
+
+    }
+    const imprime = () => {
+        console.log("lala")
+    }
+
+   let abc = document.querySelectorAll("#post-comment")
+   abc.forEach( item => {
+       item.addEventListener("click", imprime)
+    })
+
+}
+
+
+const deletePostsData = () => {
+    $.ajax({
+        method:"DELETE",
+        url: "https://ajaxclass-1ca34.firebaseio.com/11g/DesafioTeam3/Posts/.json",
+        success: response => {
+            console.log( response)
+        },
+        error: error => {
+            console.log( error )
+        }
+    })
+}
+
+//deletePostsData()
+
+//document.getElementById("delete-post").addEventListener("click",deleteData )
+
+
+
+var ID = function () {
+
+return  Math.random().toString(36).substr(2, 9);
+};
+var privateName = ID();
+    var o = {}
+   o.privateName = ID();
+console.log(o)
+
+
+$("#print-posts-button").click ((event)=>{
+    event.preventDefault()
+    printComments (getData())
+})
 
