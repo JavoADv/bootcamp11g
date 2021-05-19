@@ -60,7 +60,7 @@ let replies = {
     reply4:{ /*entrada de comentario*/
         userId:1, /*id del usuario que comenta*/
         postId:3, /*id del post en el que se comenta*/
-        content:"Excelente post 4 !", /*contenido del comentario */
+        content:"Excelente post 4!", /*contenido del comentario */
         creationDate:"14/04/2021", /*fecha de creación del comentario */
         creationTime:"19:00", /*hora de creación del comentario */
     },
@@ -79,15 +79,68 @@ let users = {
     }
 } 
 
-const getRepliesPostIds = replies => {
-    for (reply in replies) {
-        console.log (replies[reply].postId)
-    }
-}
+// console.log (Object.keys (postsData))
 
-const getPostIds = posts => {
-    for (post  in posts) {
-        console.log (posts[post].postId)
-    }
-}
+let keysArray = Object.keys (postsData)
 
+
+let postsInfo = keysArray.reduce ((accum, current) => {
+    let postValue = postsData [ current ]
+
+     return {... accum, [current] : {nuevo: "uno", viejo: "dos"}}
+}, {})
+
+console.log (postsInfo)
+
+
+// keysArray.forEach(key => {
+//     console.log (postsData[key])
+//     });
+// let completePost = []
+
+// const createCompleteCollection = () => {
+//     for (post in postsData) {
+//         let postId = postsData[post].postId
+//         // console.log (`El id del post es : ${postId}
+//         // `)
+
+//         // console.log (postsData[post])
+
+//         let postObject = {... postsData[post], replies: []}
+
+//         // console.log (postObject)
+
+//         for (reply in replies) {
+           
+//             if (replies[reply].postId === postId) {
+//                 let replyObject = replies[reply] 
+//                 postObject.replies.push (replyObject)
+//                 // console.log (replyObject)
+//             } 
+//         } completePost.push (postObject)
+//     } 
+    
+//     // console.log (completePost)
+// }
+
+// console.log (completePost)
+
+// createCompleteCollection ()
+
+// const getRepliesPostIds = replies => {
+//     for (reply in replies) {
+//         console.log (replies[reply].content)
+//     }
+// }
+
+// // getRepliesPostIds (replies)
+
+// const getPostIds = posts => {
+//     for (post  in posts) {
+//         console.log (posts[post].postId)
+//     }
+// }
+
+// // getPostIds (postsData)
+
+// // console.log (postsData)
